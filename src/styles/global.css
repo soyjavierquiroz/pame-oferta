@@ -36,4 +36,20 @@
   .button-focus {
     @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold-200 focus-visible:ring-offset-2 focus-visible:ring-offset-brand-canvas-50;
   }
+
+  .section-breath {
+    @apply px-[12%] py-32 sm:px-10 lg:px-16;
+  }
+
+  .reading-column {
+    @apply mx-auto max-w-4xl;
+  }
+
+  .floating-card {
+    @apply rounded-[3.5rem] bg-white shadow-around;
+  }
+
+  .cta-premium {
+    @apply button-focus inline-flex items-center justify-center rounded-full bg-brand-gold-300 px-8 py-4 font-semibold uppercase tracking-widest text-black shadow-sm transition duration-300 hover:-translate-y-0.5 hover:bg-brand-gold-400 animate-pulse hover:animate-none;
+  }
 }

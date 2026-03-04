@@ -33,17 +33,17 @@ const proofImages = [
 ];
 ---
 
-<section id="price_guarantee_checkout" class="bg-brand-plum-900 px-6 py-20 sm:px-10 lg:px-16 lg:py-28">
-  <div class="mx-auto max-w-content space-y-12">
-    <div class="grid gap-8 rounded-hero border border-white/10 bg-brand-plum-800 p-6 shadow-soft sm:p-8 lg:grid-cols-[0.9fr_1.1fr]">
+<section id="price_guarantee_checkout" class="section-breath bg-brand-lilac-50">
+  <div class="reading-column space-y-14">
+    <div class="grid gap-8 rounded-[3.5rem] bg-brand-canvas-100 p-5 shadow-around sm:p-6 lg:grid-cols-[0.9fr_1.1fr]">
       <div class="space-y-6">
-        <div class="rounded-hero border border-brand-gold-300/30 bg-brand-gold-300/10 p-6">
+        <div class="floating-card p-6 sm:p-8">
           {splitLines(String(priceAnchor.copy)).map((line, index) => (
             <p
               class:list={[
                 index === 0
-                  ? 'text-sm font-bold tracking-[0.08em] text-brand-gold-100'
-                  : 'mt-4 font-display text-5xl font-semibold leading-none text-brand-gold-300 sm:text-6xl',
+                  ? 'text-sm font-semibold tracking-[0.12em] text-brand-lilac-600'
+                  : 'mt-4 text-5xl leading-none text-brand-plum-900 sm:text-6xl',
               ]}
             >
               {line}
@@ -53,7 +53,7 @@ const proofImages = [
 
         <a
           href="https://oferta.pameflorescrea.com"
-          class="button-focus inline-flex w-full items-center justify-center rounded-full bg-brand-gold-300 px-7 py-4 text-sm font-bold uppercase tracking-[0.16em] text-brand-plum-900 shadow-glow transition duration-300 hover:-translate-y-0.5 hover:bg-brand-gold-400"
+          class="cta-premium w-full"
         >
           {String(cta.copy)}
         </a>
@@ -62,13 +62,13 @@ const proofImages = [
       </div>
 
       <div class="space-y-6">
-        <div class="rounded-hero bg-white p-6 text-brand-plum-900 sm:p-8">
+        <div class="floating-card p-6 text-brand-plum-900 sm:p-8">
           {splitLines(String(guarantee.copy)).map((line, index) => (
             <p
               class:list={[
                 index === 0
-                  ? 'font-display text-3xl font-semibold leading-tight text-brand-plum-900 sm:text-4xl'
-                  : 'mt-3 text-sm leading-relaxed text-brand-plum-700 sm:text-base',
+                  ? 'text-3xl leading-[1.1] text-brand-plum-900 sm:text-4xl'
+                  : 'mt-3 text-[15px] leading-[1.8] text-brand-plum-700',
               ]}
             >
               {line}
@@ -77,11 +77,11 @@ const proofImages = [
         </div>
 
         <div id="social_proof" class="space-y-5">
-          <p class="font-display text-4xl font-semibold text-white sm:text-5xl">{String(proofTitle.copy)}</p>
-          <p class="text-sm font-semibold tracking-[0.08em] text-brand-gold-100">{String(proofAsset.copy)}</p>
+          <p class="text-4xl leading-[1.1] text-brand-plum-900 sm:text-5xl">{String(proofTitle.copy)}</p>
+          <p class="text-sm font-semibold tracking-[0.12em] text-brand-lilac-600">{String(proofAsset.copy)}</p>
           <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-5">
             {proofImages.map((image, index) => (
-              <div class="overflow-hidden rounded-3xl border border-white/10 bg-white/10 shadow-soft">
+              <div class="overflow-hidden rounded-[2.5rem] bg-white shadow-sm">
                 <img
                   src={image}
                   alt={`${String(proofTitle.copy)} ${index + 1}`}
@@ -97,43 +97,43 @@ const proofImages = [
     </div>
 
     <div id="qualification" class="grid gap-6 lg:grid-cols-2">
-      <div class="rounded-hero bg-white p-6 shadow-soft sm:p-8">
-        <p class="font-display text-3xl font-semibold leading-tight text-brand-plum-900 sm:text-4xl">
+      <div class="floating-card p-6 sm:p-8">
+        <p class="text-3xl leading-[1.1] text-brand-plum-900 sm:text-4xl">
           {String(yesTitle.copy)}
         </p>
         <ul class="mt-6 space-y-3">
           {yesItems.map((item) => (
-            <li class="text-sm leading-relaxed text-brand-plum-700 sm:text-base">{item}</li>
+            <li class="text-[15px] leading-[1.8] text-brand-plum-700">{item}</li>
           ))}
         </ul>
       </div>
 
-      <div class="rounded-hero bg-brand-canvas-50 p-6 shadow-soft sm:p-8">
-        <p class="font-display text-3xl font-semibold leading-tight text-brand-plum-900 sm:text-4xl">
+      <div class="rounded-[3.5rem] bg-brand-canvas-100 p-6 shadow-around sm:p-8">
+        <p class="text-3xl leading-[1.1] text-brand-plum-900 sm:text-4xl">
           {String(noTitle.copy)}
         </p>
         <ul class="mt-6 space-y-3">
           {noItems.map((item) => (
-            <li class="text-sm leading-relaxed text-brand-plum-700 sm:text-base">{item}</li>
+            <li class="text-[15px] leading-[1.8] text-brand-plum-700">{item}</li>
           ))}
         </ul>
       </div>
     </div>
 
-    <div id="final_contact" class="rounded-hero border border-white/10 bg-white/10 p-6 text-center shadow-soft sm:p-8">
+    <div id="final_contact" class="rounded-[3.5rem] bg-white p-6 text-center shadow-around sm:p-8">
       <div class="mx-auto max-w-3xl space-y-5">
         <a
           href="https://oferta.pameflorescrea.com"
-          class="button-focus inline-flex w-full items-center justify-center rounded-full bg-brand-gold-300 px-7 py-4 text-sm font-bold uppercase tracking-[0.16em] text-brand-plum-900 shadow-glow transition duration-300 hover:-translate-y-0.5 hover:bg-brand-gold-400 sm:w-auto"
+          class="cta-premium w-full sm:w-auto"
         >
           {String(finalCta.copy)}
         </a>
 
         <a
           href="https://wa.link/ugkgkj"
-          class="button-focus inline-flex w-full items-center justify-center gap-3 rounded-full border border-white/20 bg-white/10 px-7 py-4 text-sm font-bold uppercase tracking-[0.14em] text-white transition duration-300 hover:-translate-y-0.5 hover:bg-white/15 sm:w-auto"
+          class="button-focus inline-flex w-full items-center justify-center gap-3 rounded-full bg-brand-canvas-50 px-7 py-4 text-sm font-semibold uppercase tracking-widest text-brand-lilac-700 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:bg-brand-canvas-100 sm:w-auto"
         >
-          <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-brand-mint-500 text-white">
+          <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-brand-mint-500 text-white shadow-sm">
             <svg viewBox="0 0 24 24" class="h-4 w-4 fill-current" aria-hidden="true">
               <path d="M20.52 3.48A11.86 11.86 0 0 0 12.09 0C5.52 0 .19 5.33.19 11.9c0 2.1.55 4.15 1.59 5.95L0 24l6.31-1.65a11.9 11.9 0 0 0 5.78 1.48h.01c6.56 0 11.9-5.34 11.9-11.91 0-3.18-1.24-6.16-3.48-8.44ZM12.1 21.82h-.01a9.88 9.88 0 0 1-5.03-1.38l-.36-.22-3.75.98 1-3.65-.24-.37a9.84 9.84 0 0 1-1.52-5.28c0-5.46 4.44-9.9 9.9-9.9 2.64 0 5.12 1.03 6.99 2.91a9.82 9.82 0 0 1 2.9 6.99c0 5.46-4.45 9.91-9.88 9.91Zm5.43-7.42c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.66.15-.2.3-.76.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.49-1.77-1.66-2.07-.18-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.66-.5h-.56c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.27.48 1.7.61.72.23 1.38.2 1.9.12.58-.09 1.77-.72 2.02-1.42.25-.69.25-1.28.18-1.41-.08-.12-.28-.2-.58-.35Z" />
             </svg>
@@ -147,17 +147,17 @@ const proofImages = [
 
 {
   stickyMobile.enabled && (
-    <div class="fixed inset-x-0 bottom-0 z-50 border-t border-brand-plum-700/30 bg-white/95 px-4 pb-[calc(0.75rem+env(safe-area-inset-bottom))] pt-3 backdrop-blur md:hidden">
-      <div class="mx-auto flex max-w-content items-center gap-3 rounded-3xl border border-brand-canvas-200 bg-brand-canvas-50 px-3 py-3 shadow-soft">
+    <div class="fixed inset-x-0 bottom-0 z-50 bg-white/95 px-4 pb-[calc(0.75rem+env(safe-area-inset-bottom))] pt-3 backdrop-blur md:hidden">
+      <div class="mx-auto flex max-w-4xl items-center gap-3 rounded-[2rem] bg-brand-canvas-50 px-3 py-3 shadow-around">
         <a
           href="https://oferta.pameflorescrea.com"
-          class="button-focus inline-flex flex-1 items-center justify-center rounded-full bg-brand-gold-300 px-5 py-3 text-xs font-bold uppercase tracking-[0.14em] text-brand-plum-900 shadow-glow transition duration-300 hover:bg-brand-gold-400"
+          class="cta-premium flex-1 px-5 py-3 text-xs"
         >
           {stickyMobile.cta_copy}
         </a>
         <a
           href="https://wa.link/ugkgkj"
-          class="button-focus inline-flex items-center justify-center rounded-full border border-brand-lilac-200 bg-white px-4 py-3 text-[0.7rem] font-bold uppercase tracking-[0.12em] text-brand-lilac-700"
+          class="button-focus inline-flex items-center justify-center rounded-full bg-white px-4 py-3 text-[0.7rem] font-semibold uppercase tracking-widest text-brand-lilac-700 shadow-sm"
         >
           {String(stickyMobile.secondary_link_optional)}
         </a>

@@ -12,29 +12,28 @@ const images = [
 ];
 ---
 
-<section id="curriculum" class="bg-white px-6 py-20 sm:px-10 lg:px-16 lg:py-28">
-  <div class="mx-auto max-w-content space-y-8">
+<section id="curriculum" class="section-breath bg-white">
+  <div class="reading-column space-y-10">
     {phases.map((item, index) => (
-      <article class="grid gap-6 rounded-hero border border-brand-canvas-200 bg-brand-canvas-50 p-6 shadow-soft sm:p-8 lg:grid-cols-[0.32fr_0.68fr] lg:items-center">
+      <article class="grid gap-6 rounded-[3.5rem] bg-brand-canvas-100 p-5 shadow-around sm:p-6 lg:grid-cols-[0.32fr_0.68fr] lg:items-center">
         <div class:list={[index % 2 === 1 && 'lg:order-2']}>
           <img
             src={images[index]}
             alt={String(item.title)}
-            class="h-56 w-full rounded-3xl object-cover"
+            class="h-56 w-full rounded-[2.8rem] object-cover"
             loading="lazy"
             decoding="async"
           />
         </div>
-        <div class:list={['space-y-4', index % 2 === 1 && 'lg:order-1']}>
-          <p class="font-display text-3xl font-semibold leading-tight text-brand-plum-900 sm:text-4xl">
+        <div class:list={['floating-card space-y-4 p-6 sm:p-8', index % 2 === 1 && 'lg:order-1']}>
+          <p class="text-3xl leading-[1.1] text-brand-plum-900 sm:text-4xl">
             {String(item.title)}
           </p>
           {splitLines(String(item.copy)).map((line) => (
-            <p class="text-sm leading-relaxed text-brand-plum-700 sm:text-base">{line}</p>
+            <p class="text-[15px] leading-[1.8] text-brand-plum-700">{line}</p>
           ))}
         </div>
       </article>
     ))}
   </div>
 </section>
-

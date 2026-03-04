@@ -70,6 +70,7 @@ export const pameTheme = {
     sans: ['"Inter"', 'sans-serif'],
   },
   boxShadow: {
+    around: '0 14px 34px -24px rgba(91, 67, 104, 0.16)',
     soft: '0 6px 16px -12px rgba(91, 67, 104, 0.12)',
     glow: '0 10px 24px -18px rgba(222, 192, 93, 0.18)',
   },
