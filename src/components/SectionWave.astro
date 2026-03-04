@@ -1,0 +1,23 @@
+---
+interface Props {
+  flip?: boolean;
+  className?: string;
+}
+
+const { flip = false, className = '' } = Astro.props;
+---
+
+<div class:list={['relative -mt-px leading-none', className]}>
+  <svg
+    class:list={['block h-14 w-full sm:h-20', flip && 'rotate-180']}
+    viewBox="0 0 1440 120"
+    preserveAspectRatio="none"
+    aria-hidden="true"
+  >
+    <path
+      d="M0 54.23C130.79 92.42 261.58 111.52 392.36 111.52C523.15 111.52 653.94 53.16 784.73 53.16C915.52 53.16 1046.3 111.52 1177.09 111.52C1307.88 111.52 1373.94 96.16 1440 80.79V120H0V54.23Z"
+      fill="currentColor"
+    ></path>
+  </svg>
+</div>
+

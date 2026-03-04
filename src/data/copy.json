@@ -62,5 +62,78 @@
       "role": "Edición de lanzamiento"
     },
     "conversionNote": "Reserva hoy y recibe una base lista para adaptar a tu próxima campaña."
+  },
+  "benefits": {
+    "eyebrow": "Por qué esta oferta funciona",
+    "title": "Beneficios pensados para vender con claridad y una imagen premium",
+    "description": "Cada bloque está diseñado para acompañar la decisión de compra: primero atrae, luego explica, después genera confianza y finalmente impulsa la acción.",
+    "items": [
+      {
+        "number": "01",
+        "title": "Mensaje ordenado y fácil de entender",
+        "description": "Tus clientas ven la transformación, la promesa y el siguiente paso sin perderse entre demasiadas ideas."
+      },
+      {
+        "number": "02",
+        "title": "Diseño elegante que eleva el valor percibido",
+        "description": "La landing se siente refinada, suave y cuidada, alineando la experiencia digital con una marca floral premium."
+      },
+      {
+        "number": "03",
+        "title": "Más confianza antes de escribirte",
+        "description": "La prueba social reduce objeciones y ayuda a que la decisión se sienta más segura desde el primer vistazo."
+      },
+      {
+        "number": "04",
+        "title": "Cierre directo con una oferta clara",
+        "description": "Precio, contenido y llamada a la acción viven en un mismo bloque para facilitar la conversión sin fricción."
+      }
+    ]
+  },
+  "socialProof": {
+    "eyebrow": "Prueba social",
+    "title": "Testimonios que se sienten reales y cercanos",
+    "description": "Esta sección simula conversaciones de WhatsApp para comunicar confianza de manera inmediata, humana y visual.",
+    "messages": [
+      {
+        "name": "Mariana",
+        "role": "Workshop floral",
+        "time": "9:14 AM",
+        "message": "Pame, apenas vi la landing entendí perfecto lo que incluía. Se siente preciosa y me dio ganas de apartar de inmediato."
+      },
+      {
+        "name": "Andrea",
+        "role": "Mentoría creativa",
+        "time": "11:42 AM",
+        "message": "La forma en que explicas el valor y muestras testimonios hace que todo se vea mucho más profesional. Ya quiero lanzar la mía."
+      },
+      {
+        "name": "Sofía",
+        "role": "Edición limitada",
+        "time": "6:28 PM",
+        "message": "Amé que no se siente invasiva. Todo es claro, elegante y el botón final sí provoca tomar acción."
+      }
+    ]
+  },
+  "offer": {
+    "eyebrow": "Oferta de lanzamiento",
+    "title": "Tu landing lista para vender tu próxima oferta floral",
+    "description": "Un cierre diseñado para que el valor sea obvio, el contenido se sienta abundante y la inscripción se convierta en el siguiente paso natural.",
+    "priceLabel": "Inversión especial",
+    "price": "$297 USD",
+    "priceFootnote": "Pago único. Acceso inmediato a la base editable y lista para personalizar.",
+    "includesTitle": "Qué incluye",
+    "includes": [
+      "Hero principal con mensaje y CTA listos para convertir",
+      "Sección de beneficios en tarjetas visuales",
+      "Prueba social con estilo conversación",
+      "Bloque de oferta final con precio y cierre",
+      "Estructura editable desde un solo archivo JSON"
+    ],
+    "primaryCta": {
+      "label": "Inscribirme ahora",
+      "href": "https://oferta.pameflorescrea.com"
+    },
+    "secondaryNote": "Cupos limitados para esta edición. Ideal si quieres lanzar pronto y verte premium desde el día uno."
   }
 }

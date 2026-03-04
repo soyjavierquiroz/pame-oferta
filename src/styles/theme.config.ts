@@ -49,6 +49,18 @@ export const pameTheme = {
         800: '#30143a',
         900: '#1b0a21',
       },
+      mint: {
+        50: '#f5fffb',
+        100: '#ddf8ed',
+        200: '#b8efd7',
+        300: '#83dfb6',
+        400: '#50cb92',
+        500: '#24aa6c',
+        600: '#188554',
+        700: '#0f613d',
+        800: '#0a4129',
+        900: '#052318',
+      },
     },
     white: '#ffffff',
   },
@@ -66,6 +78,7 @@ export const pameTheme = {
   backgroundImage: {
     'hero-glow':
       'radial-gradient(circle at 18% 20%, rgba(217, 174, 252, 0.38), transparent 34%), radial-gradient(circle at 85% 8%, rgba(255, 221, 87, 0.48), transparent 30%), linear-gradient(135deg, rgba(255, 250, 242, 0.98), rgba(255, 255, 255, 0.96))',
+    'chat-grid':
+      'radial-gradient(circle at 0.08rem 0.08rem, rgba(36, 170, 108, 0.12) 0.08rem, transparent 0), linear-gradient(135deg, rgba(245, 255, 251, 0.95), rgba(221, 248, 237, 0.95))',
   },
 } as const;
-

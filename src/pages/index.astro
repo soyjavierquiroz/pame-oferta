@@ -1,11 +1,20 @@
 ---
+import FeaturesGrid from '../components/FeaturesGrid.astro';
+import FinalCTA from '../components/FinalCTA.astro';
 import Hero from '../components/Hero.astro';
+import SectionWave from '../components/SectionWave.astro';
+import SocialProof from '../components/SocialProof.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout>
   <main>
     <Hero />
+    <SectionWave className="text-brand-canvas-50" />
+    <FeaturesGrid />
+    <SectionWave className="text-brand-mint-100" />
+    <SocialProof />
+    <SectionWave className="text-brand-plum-900" />
+    <FinalCTA />
   </main>
 </BaseLayout>
-

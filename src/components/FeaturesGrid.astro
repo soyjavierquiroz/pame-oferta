@@ -1,0 +1,40 @@
+---
+import copy from '../data/copy.json';
+
+const { benefits } = copy;
+---
+
+<section id="beneficios" class="bg-brand-canvas-50 px-6 py-16 sm:px-10 lg:px-16 lg:py-24">
+  <div class="mx-auto max-w-content">
+    <div class="max-w-3xl space-y-5">
+      <span class="inline-flex rounded-full border border-brand-lilac-200 bg-brand-lilac-50 px-4 py-2 text-xs font-bold uppercase tracking-serene text-brand-plum-700">
+        {benefits.eyebrow}
+      </span>
+      <h2 class="font-display text-4xl font-semibold leading-tight text-brand-plum-900 sm:text-5xl">
+        {benefits.title}
+      </h2>
+      <p class="text-lg leading-8 text-brand-plum-700">
+        {benefits.description}
+      </p>
+    </div>
+
+    <div class="mt-10 grid gap-6 md:grid-cols-2">
+      {
+        benefits.items.map((item) => (
+          <article class="rounded-3xl border border-brand-canvas-200 bg-white p-7 shadow-soft">
+            <span class="inline-flex rounded-full bg-brand-gold-100 px-3 py-2 text-xs font-bold uppercase tracking-serene text-brand-gold-700">
+              {item.number}
+            </span>
+            <h3 class="mt-5 font-display text-3xl font-semibold leading-tight text-brand-plum-800">
+              {item.title}
+            </h3>
+            <p class="mt-4 text-base leading-8 text-brand-plum-700">
+              {item.description}
+            </p>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
