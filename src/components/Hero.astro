@@ -9,103 +9,65 @@ const { hero } = copy;
   <div class="absolute -left-16 top-24 -z-10 h-56 w-56 rounded-[38%_62%_54%_46%/43%_48%_52%_57%] bg-brand-lilac-200/70 blur-3xl"></div>
   <div class="absolute -right-12 bottom-20 -z-10 h-64 w-64 rounded-[55%_45%_35%_65%/45%_61%_39%_55%] bg-brand-gold-200/80 blur-3xl"></div>
 
-  <div class="mx-auto grid max-w-content gap-10 rounded-hero border border-brand-lilac-100/80 bg-white/90 p-8 shadow-soft backdrop-blur md:p-10 xl:grid-cols-[1.1fr_0.9fr] xl:p-12">
+  <div class="mx-auto grid max-w-content gap-10 rounded-hero border border-brand-lilac-100/80 bg-white/90 p-8 shadow-soft backdrop-blur md:p-10 xl:grid-cols-[1.08fr_0.92fr] xl:p-12">
     <div class="space-y-8">
-      <span class="inline-flex rounded-full border border-brand-lilac-200 bg-brand-lilac-50 px-4 py-2 text-xs font-bold uppercase tracking-serene text-brand-plum-700">
+      <p class="max-w-2xl text-sm font-semibold tracking-[0.08em] text-brand-lilac-700">
         {hero.eyebrow}
-      </span>
+      </p>
 
-      <div class="space-y-6">
-        <h1 class="max-w-2xl font-display text-5xl font-semibold leading-tight text-brand-plum-900 sm:text-6xl lg:text-7xl">
-          {hero.headlineStart}
-          <span class="block text-brand-lilac-600">{hero.headlineEmphasis}</span>
-          <span class="block text-brand-plum-800">{hero.headlineEnd}</span>
+      <div class="space-y-5">
+        <h1 class="max-w-3xl font-display text-5xl font-semibold leading-tight text-brand-plum-900 sm:text-6xl lg:text-7xl">
+          {hero.headline}
         </h1>
-
-        <p class="max-w-xl text-lg leading-8 text-brand-plum-700 sm:text-xl">
+        <p class="font-display text-3xl font-semibold text-brand-gold-700 sm:text-4xl">{hero.subheadline}</p>
+        <p class="max-w-2xl text-lg leading-8 text-brand-plum-700 sm:text-xl">
           {hero.description}
         </p>
       </div>
 
-      <div class="flex flex-col gap-4 sm:flex-row">
+      <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
         <a
-          href={hero.primaryCta.href}
-          class="button-focus inline-flex items-center justify-center rounded-full bg-brand-plum-700 px-7 py-4 text-sm font-bold uppercase tracking-[0.16em] text-white shadow-glow transition duration-300 hover:-translate-y-0.5 hover:bg-brand-plum-800"
+          href={hero.cta.href}
+          class="button-focus inline-flex items-center justify-center rounded-full bg-brand-gold-300 px-7 py-4 text-sm font-bold uppercase tracking-[0.16em] text-brand-plum-900 shadow-glow transition duration-300 hover:-translate-y-0.5 hover:bg-brand-gold-400 animate-pulse hover:animate-none"
         >
-          {hero.primaryCta.label}
-        </a>
-        <a
-          href={hero.secondaryCta.href}
-          class="button-focus inline-flex items-center justify-center rounded-full border border-brand-gold-400 bg-brand-gold-100 px-7 py-4 text-sm font-bold uppercase tracking-[0.16em] text-brand-plum-800 transition duration-300 hover:-translate-y-0.5 hover:bg-brand-gold-200"
-        >
-          {hero.secondaryCta.label}
+          {hero.cta.label}
         </a>
       </div>
 
       <div class="flex flex-wrap gap-3">
         {
-          hero.badges.map((badge) => (
+          hero.quickFacts.map((fact) => (
             <span class="rounded-full bg-brand-canvas-50 px-4 py-2 text-sm font-semibold text-brand-plum-700 ring-1 ring-inset ring-brand-canvas-200">
-              {badge}
+              {fact}
             </span>
-          ))
-        }
-      </div>
-
-      <div class="grid gap-4 pt-2 md:grid-cols-3">
-        {
-          hero.features.map((feature) => (
-            <article class="rounded-3xl border border-brand-canvas-200 bg-brand-canvas-50 p-5">
-              <p class="font-display text-2xl font-semibold text-brand-plum-800">{feature.title}</p>
-              <p class="mt-3 text-sm leading-7 text-brand-plum-700">{feature.description}</p>
-            </article>
           ))
         }
       </div>
     </div>
 
-    <div class="relative flex flex-col justify-between gap-6 rounded-hero bg-brand-plum-800 p-6 text-white shadow-soft sm:p-8">
+    <div class="relative rounded-hero bg-brand-plum-800 p-6 text-white shadow-soft sm:p-8">
       <div class="absolute right-6 top-6 h-20 w-20 rounded-[62%_38%_58%_42%/38%_42%_58%_62%] bg-brand-gold-300/90 blur-2xl"></div>
-
-      <div class="relative space-y-5">
-        <span class="inline-flex rounded-full bg-white/10 px-4 py-2 text-xs font-bold uppercase tracking-serene text-brand-gold-100">
-          {hero.proof.label}
-        </span>
-
-        <div class="space-y-4">
-          <p class="font-display text-4xl font-semibold leading-tight text-white sm:text-5xl">
-            {hero.proof.title}
-          </p>
-          <p class="text-base leading-8 text-brand-lilac-100">
-            {hero.proof.description}
-          </p>
-        </div>
-      </div>
-
-      <div class="grid gap-4 sm:grid-cols-3">
-        {
-          hero.proof.metrics.map((metric) => (
-            <div class="rounded-3xl border border-white/10 bg-white/10 p-4 backdrop-blur-sm">
-              <p class="font-display text-3xl font-semibold text-brand-gold-200">{metric.value}</p>
-              <p class="mt-2 text-sm leading-6 text-brand-lilac-50">{metric.label}</p>
-            </div>
-          ))
-        }
-      </div>
-
-      <div class="space-y-4 rounded-3xl bg-white px-5 py-6 text-brand-plum-900">
-        <p class="text-sm font-bold uppercase tracking-serene text-brand-lilac-600">{hero.testimonialLabel}</p>
-        <blockquote class="font-display text-3xl font-semibold leading-tight text-brand-plum-800">
-          &ldquo;{hero.testimonial.quote}&rdquo;
-        </blockquote>
-        <div class="text-sm font-semibold text-brand-plum-700">
-          <p>{hero.testimonial.author}</p>
-          <p class="text-brand-plum-500">{hero.testimonial.role}</p>
-        </div>
-      </div>
-
-      <div class="rounded-3xl border border-brand-gold-300/40 bg-brand-gold-300/20 px-5 py-4 text-sm font-semibold text-brand-gold-50">
-        {hero.conversionNote}
+      <img
+        src={hero.image.src}
+        alt={hero.image.alt}
+        class="relative z-10 mx-auto h-72 w-full rounded-3xl object-cover object-top"
+        loading="eager"
+        decoding="async"
+      />
+      <div class="relative z-10 mt-6 rounded-3xl bg-white px-5 py-6 text-brand-plum-900">
+        <p class="font-display text-3xl font-semibold leading-tight text-brand-plum-800">{hero.fitTitle}</p>
+        <ul class="mt-5 space-y-3">
+          {
+            hero.fitItems.map((item) => (
+              <li class="flex items-start gap-3">
+                <span class="mt-1 inline-flex h-6 w-6 flex-none items-center justify-center rounded-full bg-brand-gold-100 text-xs font-bold text-brand-gold-700">
+                  +
+                </span>
+                <span class="text-sm leading-7 text-brand-plum-700">{item}</span>
+              </li>
+            ))
+          }
+        </ul>
       </div>
     </div>
   </div>

@@ -1,0 +1,39 @@
+---
+import copy from '../data/copy.json';
+
+const { transformation } = copy;
+---
+
+<section class="bg-brand-canvas-50 px-6 py-16 sm:px-10 lg:px-16 lg:py-24">
+  <div class="mx-auto max-w-content">
+    <div class="max-w-3xl">
+      <h2 class="font-display text-4xl font-semibold leading-tight text-brand-plum-900 sm:text-5xl">
+        {transformation.eyebrow}
+      </h2>
+    </div>
+
+    <div class="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-5">
+      {
+        transformation.items.map((item) => (
+          <article class="flex h-full flex-col overflow-hidden rounded-3xl border border-brand-canvas-200 bg-white shadow-soft">
+            <img
+              src={item.image}
+              alt={item.text}
+              class="h-48 w-full object-cover"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="flex flex-1 items-start p-5">
+              <p class="text-sm leading-7 text-brand-plum-800">{item.text}</p>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+
+    <div class="mt-8 rounded-3xl border border-brand-gold-200 bg-brand-gold-100 px-6 py-5 text-center">
+      <p class="font-display text-3xl font-semibold text-brand-plum-900">{transformation.closing}</p>
+    </div>
+  </div>
+</section>
+

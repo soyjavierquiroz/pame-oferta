@@ -1,54 +1,83 @@
 ---
 import copy from '../data/copy.json';
 
-const { socialProof } = copy;
+const { support } = copy;
 ---
 
 <section class="bg-brand-mint-100 bg-chat-grid bg-[length:1.4rem_1.4rem,auto] px-6 py-16 sm:px-10 lg:px-16 lg:py-24">
   <div class="mx-auto max-w-content">
-    <div class="grid gap-10 xl:grid-cols-[0.9fr_1.1fr] xl:items-start">
-      <div class="max-w-2xl space-y-5">
-        <span class="inline-flex rounded-full border border-brand-mint-300 bg-brand-mint-50 px-4 py-2 text-xs font-bold uppercase tracking-serene text-brand-mint-700">
-          {socialProof.eyebrow}
-        </span>
-        <h2 class="font-display text-4xl font-semibold leading-tight text-brand-plum-900 sm:text-5xl">
-          {socialProof.title}
-        </h2>
-        <p class="text-lg leading-8 text-brand-plum-700">
-          {socialProof.description}
-        </p>
-      </div>
+    <div class="rounded-hero border border-brand-mint-200 bg-white/90 p-8 shadow-soft backdrop-blur md:p-10">
+      <blockquote class="mx-auto max-w-4xl text-center font-display text-4xl font-semibold leading-tight text-brand-plum-900 sm:text-5xl">
+        {support.quote}
+      </blockquote>
 
-      <div class="grid gap-6 md:grid-cols-2">
+      <div class="mt-10 grid gap-6 lg:grid-cols-2">
         {
-          socialProof.messages.map((message, index) => (
-            <article
-              class:list={[
-                'rounded-[2rem] border border-brand-mint-200 bg-white p-5 shadow-soft',
-                index === 1 && 'md:translate-y-10',
-                index === 2 && 'md:col-span-2 md:max-w-xl md:justify-self-center',
-              ]}
-            >
-              <div class="flex items-center justify-between gap-4 border-b border-brand-mint-100 pb-4">
-                <div>
-                  <p class="font-semibold text-brand-plum-900">{message.name}</p>
-                  <p class="text-sm text-brand-mint-700">{message.role}</p>
-                </div>
-                <span class="text-xs font-bold uppercase tracking-serene text-brand-mint-600">
-                  {message.time}
-                </span>
-              </div>
-
-              <div class="mt-4 flex justify-start">
-                <div class="max-w-md rounded-[1.5rem_1.5rem_1.5rem_0.5rem] bg-brand-mint-50 px-4 py-4 text-sm leading-7 text-brand-plum-800 ring-1 ring-inset ring-brand-mint-100">
-                  {message.message}
-                </div>
+          support.sections.map((section) => (
+            <article class="overflow-hidden rounded-3xl border border-brand-mint-100 bg-white shadow-soft">
+              <img
+                src={section.image}
+                alt={section.title}
+                class="h-52 w-full object-cover"
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="p-6">
+                <h3 class="font-display text-3xl font-semibold leading-tight text-brand-plum-900">
+                  {section.title}
+                </h3>
+                <p class="mt-4 text-base leading-8 text-brand-plum-700">{section.description}</p>
+                <ul class="mt-5 space-y-3">
+                  {
+                    section.bullets.map((bullet) => (
+                      <li class="flex items-start gap-3">
+                        <span class="mt-1 inline-flex h-6 w-6 flex-none items-center justify-center rounded-full bg-brand-mint-50 text-xs font-bold text-brand-mint-700">
+                          +
+                        </span>
+                        <span class="text-sm leading-7 text-brand-plum-700">{bullet}</span>
+                      </li>
+                    ))
+                  }
+                </ul>
               </div>
             </article>
           ))
         }
       </div>
+
+      <div class="mt-12 space-y-6">
+        <div class="space-y-3 text-center">
+          <p class="font-display text-4xl font-semibold text-brand-plum-900">{support.testimonialsTitle}</p>
+          <p class="text-base font-semibold tracking-[0.08em] text-brand-lilac-700">
+            {support.testimonialsSubtitle}
+          </p>
+        </div>
+
+        <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-5">
+          {
+            support.testimonialsImages.map((item) => (
+              <div class="overflow-hidden rounded-3xl border border-brand-mint-100 bg-white shadow-soft">
+                <img
+                  src={item.src}
+                  alt={item.alt}
+                  class="h-full w-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            ))
+          }
+        </div>
+
+        <div class="text-center">
+          <a
+            href={support.testimonialsCta.href}
+            class="button-focus inline-flex items-center justify-center rounded-full bg-brand-gold-300 px-7 py-4 text-sm font-bold uppercase tracking-[0.16em] text-brand-plum-900 shadow-glow transition duration-300 hover:-translate-y-0.5 hover:bg-brand-gold-400"
+          >
+            {support.testimonialsCta.label}
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-

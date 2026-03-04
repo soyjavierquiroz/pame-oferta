@@ -1,187 +1,317 @@
 {
   "seo": {
-    "title": "Pame Flores | Oferta Premium",
-    "description": "Landing page de alta conversión para presentar una oferta elegante, clara y lista para vender."
+    "title": "Certificación de Juguetería Creativa Profesional | Pame Flores Crea",
+    "description": "En solo 9 semanas, aprende el sistema paso a paso para crear y vender Juguetes Creativos irresistibles y empezar a generar ingresos reales desde casa con un negocio alineado a tu vida familiar."
   },
   "hero": {
-    "eyebrow": "Inscripciones abiertas",
-    "headlineStart": "Descubre la manera más simple y rápida de",
-    "headlineEmphasis": "generar ingresos",
-    "headlineEnd": "y crear un negocio exitoso en solo 9 semanas.",
-    "description": "Una propuesta diseñada para comunicar valor con claridad, elevar tu percepción de marca y ayudarte a presentar una oferta que se sienta lista para vender desde el primer día.",
-    "primaryCta": {
-      "label": "Quiero asegurar mi lugar",
+    "eyebrow": "Te presento la Certificación de Juguetería Creativa Profesional.",
+    "headline": "En solo 9 semanas, aprende el sistema paso a paso para crear y vender Juguetes Creativos irresistibles y empezar a generar ingresos reales desde casa con un negocio alineado a tu vida familiar.",
+    "subheadline": "Aunque hoy empieces desde cero.",
+    "description": "Con la Certificación de Juguetería Creativa es más fácil generar ingresos con Juguetes Creativos aún si empiezas de cero o no te sientes Creativa",
+    "cta": {
+      "label": "QUIERO MI CUPO AHORA",
       "href": "#conversion"
     },
-    "secondaryCta": {
-      "label": "Ver lo que incluye",
-      "href": "#beneficios"
-    },
-    "badges": [
-      "Estructura pensada para convertir",
-      "Copy completamente editable",
-      "Diseño listo para sentirse premium"
+    "quickFacts": [
+      "Acceso por 1 año",
+      "Comunidad y soporte",
+      "7 días de garantía",
+      "Método"
     ],
-    "testimonialLabel": "Lo que dicen antes de reservar",
-    "features": [
-      {
-        "title": "Claridad desde el primer scroll",
-        "description": "La oferta explica qué haces, para quién es y por qué vale la pena sin fricción ni ruido."
-      },
-      {
-        "title": "Una estética que transmite valor",
-        "description": "Jerarquía limpia, formas orgánicas y detalles suaves para elevar la percepción de tu marca."
-      },
-      {
-        "title": "Urgencia elegante, no agresiva",
-        "description": "Llamados a la acción claros con una narrativa cálida que impulsa la decisión de compra."
-      }
+    "fitTitle": "Este programa es para ti si…",
+    "fitItems": [
+      "Eres mamá y quieres generar ingresos extras sin descuidar a tu familia.",
+      "Tienes formación en educación infantil y quieres un negocio alineado con tu profesión y tus valores.",
+      "Sabes que tienes talento, pero no has logrado convertirlo en un proyecto rentable y estructurado.",
+      "Estás cansada de empezar cosas que no se sienten tuyas ni conectadas con tu propósito.",
+      "Has invertido en cursos de marketing, pero ninguno te enseñó cómo monetizar lo que realmente amas."
     ],
-    "proof": {
-      "label": "Cupo limitado",
-      "title": "Una landing lista para presentar tu próxima oferta estrella",
-      "description": "Ideal para creadoras que quieren comunicar transformación, sostener una imagen premium y vender con una experiencia digital tan cuidada como sus arreglos.",
-      "metrics": [
-        {
-          "value": "+3X",
-          "label": "más claridad en tu mensaje"
-        },
-        {
-          "value": "1 día",
-          "label": "para publicar tu oferta"
-        },
-        {
-          "value": "100%",
-          "label": "texto editable desde JSON"
-        }
-      ]
-    },
-    "testimonial": {
-      "quote": "Ahora mi propuesta se siente tan refinada como mi trabajo y la gente entiende el valor en segundos.",
-      "author": "Creadora floral",
-      "role": "Edición de lanzamiento"
-    },
-    "conversionNote": "Reserva hoy y accede también a bonos especiales para lanzar con más impulso."
-  },
-  "benefits": {
-    "eyebrow": "Por qué esta oferta funciona",
-    "title": "Beneficios pensados para vender con claridad y una imagen premium",
-    "description": "Cada bloque está diseñado para acompañar la decisión de compra: primero atrae, luego explica, después genera confianza y finalmente impulsa la acción.",
-    "items": [
-      {
-        "number": "01",
-        "title": "Mensaje ordenado y fácil de entender",
-        "description": "Tus clientas ven la transformación, la promesa y el siguiente paso sin perderse entre demasiadas ideas."
-      },
-      {
-        "number": "02",
-        "title": "Diseño elegante que eleva el valor percibido",
-        "description": "La landing se siente refinada, suave y cuidada, alineando la experiencia digital con una marca floral premium."
-      },
-      {
-        "number": "03",
-        "title": "Más confianza antes de escribirte",
-        "description": "La prueba social reduce objeciones y ayuda a que la decisión se sienta más segura desde el primer vistazo."
-      },
-      {
-        "number": "04",
-        "title": "Cierre directo con una oferta clara",
-        "description": "Precio, contenido y llamada a la acción viven en un mismo bloque para facilitar la conversión sin fricción."
-      }
-    ]
-  },
-  "socialProof": {
-    "eyebrow": "Prueba social",
-    "title": "Testimonios que se sienten reales y cercanos",
-    "description": "Esta sección simula conversaciones de WhatsApp para comunicar confianza de manera inmediata, humana y visual.",
-    "messages": [
-      {
-        "name": "Mariana",
-        "role": "Workshop floral",
-        "time": "9:14 AM",
-        "message": "Pame, apenas vi la landing entendí perfecto lo que incluía. Se siente preciosa y me dio ganas de apartar de inmediato."
-      },
-      {
-        "name": "Andrea",
-        "role": "Mentoría creativa",
-        "time": "11:42 AM",
-        "message": "La forma en que explicas el valor y muestras testimonios hace que todo se vea mucho más profesional. Ya quiero lanzar la mía."
-      },
-      {
-        "name": "Sofía",
-        "role": "Edición limitada",
-        "time": "6:28 PM",
-        "message": "Amé que no se siente invasiva. Todo es claro, elegante y el botón final sí provoca tomar acción."
-      }
-    ]
-  },
-  "offer": {
-    "eyebrow": "Oferta de lanzamiento",
-    "title": "Tu landing lista para vender tu próxima oferta floral",
-    "description": "Un cierre diseñado para que el valor sea obvio, el contenido se sienta abundante y la inscripción se convierta en el siguiente paso natural.",
-    "priceLabel": "Inversión especial",
-    "price": "$297 USD",
-    "priceFootnote": "Pago único. Acceso inmediato a la base editable y lista para personalizar.",
-    "includesTitle": "Qué incluye",
-    "includes": [
-      "Hero principal con mensaje y CTA listos para convertir",
-      "Sección de beneficios en tarjetas visuales",
-      "Prueba social con estilo conversación",
-      "Bloque de oferta final con precio y cierre",
-      "Estructura editable desde un solo archivo JSON"
-    ],
-    "primaryCta": {
-      "label": "Inscribirme ahora",
-      "href": "https://oferta.pameflorescrea.com"
-    },
-    "secondaryNote": "Cupos limitados para esta edición. Ideal si quieres lanzar pronto y verte premium desde el día uno.",
-    "guarantee": {
-      "label": "Garantía de satisfacción",
-      "title": "Toma la decisión con confianza y respaldo.",
-      "description": "Tu inscripción está acompañada por una garantía clara y simple para que avances con seguridad, sabiendo que tu inversión está protegida."
+    "image": {
+      "src": "/imagenes/pame2.webp",
+      "alt": "Te presento la Certificación de Juguetería Creativa Profesional."
     }
   },
-  "bonus": {
-    "eyebrow": "Bonos exclusivos",
-    "badge": "GRATIS SOLO HOY",
-    "title": "Activa tu lanzamiento con extras pensados para acelerar resultados",
-    "description": "Además del programa principal, esta edición incluye recursos adicionales para ayudarte a salir más rápido, verte más profesional y convertir con más confianza.",
+  "transformation": {
+    "eyebrow": "Quiero que imagines esto…",
     "items": [
       {
-        "title": "Plantilla express de oferta",
-        "description": "Una base lista para adaptar tu mensaje principal y publicar sin empezar desde cero."
+        "text": "Que dominas la creación de Juguetes Creativos irresistibles que no solo se ven hermosos, sino que realmente estimulan y enamoran a los niños.",
+        "image": "/imagenes/disena-canva.webp"
       },
       {
-        "title": "Guía de objeciones frecuentes",
-        "description": "Respuestas concretas para manejar dudas comunes y sostener el valor de tu oferta."
+        "text": "Que sabes exactamente qué diseñar, cómo estructurarlo y por qué funciona, sin improvisar ni dudar.",
+        "image": "/imagenes/pack-3productos.webp"
       },
       {
-        "title": "Checklist de lanzamiento en 1 día",
-        "description": "Una secuencia clara para revisar tu página, CTA y cierre antes de salir en vivo."
+        "text": "Que comienzas a recibir pedidos y mensajes de mamás agradecidas que te recomiendan porque sienten el valor de lo que haces.",
+        "image": "/imagenes/shopping-feliz.webp"
+      },
+      {
+        "text": "Que puedes generar ingresos desde casa mientras sigues presente en los momentos importantes con tu familia.",
+        "image": "/imagenes/familia.jpg.webp"
+      },
+      {
+        "text": "Que tu talento deja de ser un hobby y se convierte en un negocio real, alineado contigo y con la vida que deseas construir.",
+        "image": "/imagenes/emprende.webp"
       }
     ],
-    "footnote": "Disponibles solo en esta ventana de inscripción y sin costo adicional."
+    "closing": "Entonces, hagamos que pase."
   },
-  "faq": {
-    "eyebrow": "Preguntas frecuentes",
-    "title": "Resuelve las dudas antes de reservar tu lugar",
+  "phases": {
+    "eyebrow": "La Certificación está diseñada como un proceso claro y paso a paso",
+    "title": "No es un curso suelto.",
+    "description": "Es un camino estructurado para que en 9 semanas pases de tener ideas… a tener un proyecto real.",
     "items": [
       {
-        "question": "¿Necesito experiencia previa para aprovechar esta oferta?",
-        "answer": "No. La estructura está pensada para que puedas usarla incluso si aún estás afinando tu mensaje o tu proceso comercial."
+        "phase": "FASE 1",
+        "title": "Bases Profesionales",
+        "description": "Aquí construyes los cimientos. Aprendes las bases que hacen que un Juguete Creativo se vea profesional, funcione bien y tenga valor. Dejas de improvisar. Empiezas a crear con intención. Desde el inicio trabajarás con modelos guiados para ganar seguridad y confianza.",
+        "image": "/imagenes/kit-principiante-experta.webp"
       },
       {
-        "question": "¿Puedo adaptar el contenido a mi propia marca y servicios?",
-        "answer": "Sí. Todo el copy principal está centralizado en JSON para que puedas modificar textos, enfoque y matices sin reescribir la estructura."
+        "phase": "FASE 2",
+        "title": "Diseño con Dirección",
+        "description": "Aprendes a diseñar productos que no solo sean lindos, sino que realmente gusten y se vendan. Entiendes qué hace que un juguete destaque, cómo mejorar tus ideas y cómo desarrollar tu propio estilo sin copiar. Aquí comienzas a crear con criterio.",
+        "image": "/imagenes/disena-canva.webp"
       },
       {
-        "question": "¿Cuánto tiempo me toma dejarla lista para publicar?",
-        "answer": "Si ya tienes clara tu propuesta, puedes personalizar la base y publicarla en muy poco tiempo, incluso el mismo día."
+        "phase": "FASE 3",
+        "title": "Tus Primeras Ventas",
+        "description": "Aquí conviertes lo que haces en algo que genera ingresos. Aprendes cómo presentar tus productos, cómo poner precios con seguridad y cómo empezar a vender sin sentir presión ni incomodidad. Pasas de crear por gusto… a vender con claridad.",
+        "image": "/imagenes/shopping-feliz.webp"
       },
       {
-        "question": "¿Los bonos tienen un costo adicional?",
-        "answer": "No. Están incluidos como parte de esta edición y se activan dentro de la ventana promocional actual."
+        "phase": "FASE 4",
+        "title": "Tu Proyecto con Propósito",
+        "description": "Aquí organizas todo para que tu emprendimiento tenga dirección. No se trata solo de vender una vez, sino de construir algo que puedas sostener y que esté alineado con tu vida y tus valores. Un proyecto que te haga sentir orgullosa.",
+        "image": "/imagenes/familia.jpg.webp"
+      }
+    ],
+    "modelsTitle": "Además, trabajarás con 8 modelos de libros sensoriales",
+    "modelsIntro": "Modelos listos para aplicar que te permiten:",
+    "modelsBullets": [
+      "Practicar con guía",
+      "No empezar desde cero",
+      "Ganar confianza más rápido",
+      "Salir al mercado con productos reales",
+      "No estarás sola.",
+      "No tendrás que inventarlo todo."
+    ],
+    "modelsImage": "/imagenes/pack-3productos.webp"
+  },
+  "support": {
+    "quote": "Esta no es solo una certificación. Es el entorno, el método y el acompañamiento que necesitas para construir algo real.",
+    "sections": [
+      {
+        "title": "Sesiones en vivo",
+        "description": "No estarás sola viendo clases grabadas.",
+        "bullets": [
+          "Resolver tus dudas en el momento",
+          "Ver procesos paso a paso",
+          "Avanzar con claridad y confianza",
+          "Sentirte acompañada en cada etapa",
+          "Y si no puedes conectarte, tendrás acceso a las repeticiones.",
+          "Aprendes, aplicas y avanzas."
+        ],
+        "image": "/imagenes/en-vivo.webp"
+      },
+      {
+        "title": "Comunidad Internacional de Jugueteras Creativas",
+        "description": "Formarás parte de una comunidad activa de mujeres que, como tú, decidieron convertir su creatividad en un proyecto real.",
+        "bullets": [
+          "Apoyo",
+          "Motivación",
+          "Inspiración",
+          "Experiencias reales",
+          "Networking y colaboración",
+          "No emprendes sola.",
+          "Caminas acompañada."
+        ],
+        "image": "/imagenes/comunidad.webp"
+      },
+      {
+        "title": "Acceso completo por 1 año",
+        "description": "Tendrás acceso durante 12 meses para:",
+        "bullets": [
+          "Ver las clases a tu ritmo",
+          "Repetir los módulos cuando lo necesites",
+          "Acceso a contenido exclusivo",
+          "Consolidar tu proyecto con calma",
+          "Porque no se trata solo de aprender rápido."
+        ],
+        "image": "/imagenes/familia.jpg.webp"
+      },
+      {
+        "title": "Certificado de participación",
+        "description": "Al finalizar la Certificación recibirás tu certificado de participación al concluir.",
+        "bullets": [
+          "Un reconocimiento a tu compromiso, tu crecimiento y el paso que decidiste dar para profesionalizar tu talento."
+        ],
+        "image": "/imagenes/pame5.webp"
+      }
+    ],
+    "testimonialsTitle": "Lo que dicen nuestras alumnas",
+    "testimonialsSubtitle": "Videos de testimonios",
+    "testimonialsCta": {
+      "label": "QUIERO MI CUPO AHORA",
+      "href": "#conversion"
+    },
+    "testimonialsImages": [
+      {
+        "src": "/imagenes/Testimonio-1-1-1-1024x818.jpg.webp",
+        "alt": "Lo que dicen nuestras alumnas"
+      },
+      {
+        "src": "/imagenes/Testimonio-2-1-1-879x1024.jpg.webp",
+        "alt": "Videos de testimonios"
+      },
+      {
+        "src": "/imagenes/t2-2-1024x1008.jpg.webp",
+        "alt": "Lo que dicen nuestras alumnas"
+      },
+      {
+        "src": "/imagenes/t3-2-1024x825.jpg.webp",
+        "alt": "Videos de testimonios"
+      },
+      {
+        "src": "/imagenes/t4-2-1024x823.jpg.webp",
+        "alt": "Lo que dicen nuestras alumnas"
       }
     ]
+  },
+  "bonus": {
+    "title": "Recibirás 9 Bonos Estratégicos",
+    "value": "Valorados en más de $800 USD",
+    "description": "Diseñados para ayudarte a vender más, crear mejor y recuperar tu inversión más rápido.",
+    "categories": [
+      {
+        "title": "BONOS PARA VENDER MÁS",
+        "items": [
+          {
+            "title": "Fotos y Videos que Venden",
+            "description": "Aprende cómo tomar fotos y grabar videos atractivos usando solo tu celular, para que tus Juguetes Creativos se vean profesionales y llamen la atención en redes sociales. Porque no basta con crear algo lindo. Debes saber mostrarlo para que se venda.",
+            "image": "/imagenes/fotoyvideos.webp"
+          },
+          {
+            "title": "Vende por Redes Sociales",
+            "description": "Una guía práctica para usar Instagram, Facebook o WhatsApp de forma simple y estratégica. Aprenderás qué publicar, cómo presentar tus productos y cómo atraer clientes sin sentirte forzada ni incómoda.",
+            "image": "/imagenes/emprende.webp"
+          },
+          {
+            "title": "Calculadora Mágica de Rentabilidad",
+            "description": "Una herramienta práctica que te ayudará a calcular correctamente tus costos, definir precios con seguridad y saber exactamente cuánto estás ganando. No más precios al azar. No más dudas.",
+            "image": "/imagenes/kit-calculadora-magica.webp"
+          },
+          {
+            "title": "Estrategia de Ventas en Temporadas Altas",
+            "description": "Aprende cómo prepararte para fechas clave (Navidad, regreso a clases, Día del Niño, cumpleaños) con campañas sencillas que te permitan aumentar tus ingresos en los meses más fuertes del año.",
+            "image": "/imagenes/reto-21-dias.webp"
+          }
+        ]
+      },
+      {
+        "title": "BONOS PARA ELEVAR TU NIVEL CREATIVO",
+        "items": [
+          {
+            "title": "Empaques que Enamoran",
+            "description": "Descubre cómo presentar tus productos de forma más atractiva y profesional para aumentar el valor percibido, generar más recomendaciones y mejorar la experiencia del cliente.",
+            "image": "/imagenes/envio-perfecto.webp"
+          },
+          {
+            "title": "Estimulación Temprana para Jugueteras Creativas",
+            "description": "Aprende los fundamentos básicos de estimulación temprana para que tus juguetes no solo sean lindos, sino también educativos y funcionales. Esto eleva tu autoridad y te permite comunicar mejor el valor de tus productos.",
+            "image": "/imagenes/jc_logo.png.webp"
+          },
+          {
+            "title": "Combinación de Colores Asombrosas",
+            "description": "Aprende principios sencillos para elegir y combinar colores de forma armoniosa, logrando diseños más atractivos y profesionales, incluso si sientes que “no eres creativa”.",
+            "image": "/imagenes/disena-canva.webp"
+          },
+          {
+            "title": "Imprime y Vende (Técnica de Sublimado)",
+            "description": "Descubre cómo aplicar la técnica de sublimado para crear juguetes y productos personalizados más rápidos, lindos y con mayor variedad. Más opciones. Más velocidad. Más oportunidades de venta.",
+            "image": "/imagenes/imprime-y-vende.webp"
+          }
+        ]
+      },
+      {
+        "title": "BONO ESPECIAL",
+        "items": [
+          {
+            "title": "Juguetes Creativos que Enamoran",
+            "description": "14 tutoriales adicionales de juguetes simples, lindos y estratégicos que puedes: vender individualmente, armar como kits, ofrecer como regalo o sorpresa, usar para aumentar tu ticket promedio. Más oportunidades de ingreso desde el inicio.",
+            "image": "/imagenes/bonos.webp"
+          }
+        ]
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "question": "Esta Certificación SÍ es para ti si…",
+        "answers": [
+          "Eres mamá, profesional educativa o mujer creativa que quiere generar ingresos desde casa sin descuidar su familia.",
+          "Tienes talento y creatividad, pero te falta estructura y dirección para convertirlo en un negocio real.",
+          "Quieres dejar de improvisar y aprender un sistema claro paso a paso.",
+          "Estás dispuesta a aplicar lo que aprendas y comprometerte con tu crecimiento.",
+          "Buscas un proyecto alineado con tus valores, tu propósito y tu estilo de vida.",
+          "Deseas construir algo que te haga sentir orgullosa y te dé independencia."
+        ]
+      },
+      {
+        "question": "Esta Certificación NO es para ti si…",
+        "answers": [
+          "Estás buscando resultados sin aplicar ni comprometerte.",
+          "Prefieres seguir probando ideas sueltas de internet sin estructura ni guía.",
+          "No estás dispuesta a invertir tiempo en aprender y mejorar.",
+          "Quieres un hobby sin intención de convertirlo en algo profesional.",
+          "No estás abierta a recibir acompañamiento ni seguir un método."
+        ]
+      }
+    ],
+    "contactTitle": "Tienes preguntas escríbenos",
+    "contactHref": "https://wa.link/ugkgkj"
+  },
+  "offer": {
+    "title": "Recapitulemos todo lo que obtienes hoy",
+    "benefitsLabel": "Beneficios",
+    "benefits": [
+      "4 Fases estructuradas paso a paso",
+      "8 modelos profesionales de libros sensoriales",
+      "Método probado para convertir tu creatividad en ingresos",
+      "Asesorías grupales en vivo para resolver dudas",
+      "Comunidad internacional de Jugueteras Creativas",
+      "Acceso completo por 1 año",
+      "Certificado de finalización"
+    ],
+    "bonusesLabel": "9 Bonos Estratégicos",
+    "bonuses": [
+      "Fotos y Videos que Venden",
+      "Vende por Redes Sociales",
+      "Calculadora Mágica de Rentabilidad",
+      "Estrategia de Temporadas Altas",
+      "Empaques que Enamoran",
+      "Estimulación Temprana",
+      "Combinación de Colores Asombrosas",
+      "Técnica de Sublimado",
+      "Juguetes Creativos que enamoran con 14 Tutoriales adicionales para vender más"
+    ],
+    "valueLabel": "Programa valuado en 1497",
+    "valueAmount": "$1497 USD",
+    "priceLabel": "Hoy solo 197",
+    "priceAmount": "$197 USD",
+    "priceNote": "Acceso por 1 año",
+    "guaranteeLabel": "Garantía de 7 días",
+    "guaranteeLines": [
+      "Prueba la Certificación durante 7 días.",
+      "Si no es para ti, te devolvemos el 100% de tu dinero.",
+      "Sin preguntas. Sin complicaciones."
+    ],
+    "cta": {
+      "label": "QUIERO MI CUPO AHORA",
+      "href": "https://oferta.pameflorescrea.com"
+    },
+    "guaranteeImage": "/imagenes/garantia-7-dias-300x300-1.png.webp"
   }
 }

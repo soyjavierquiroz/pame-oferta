@@ -6,15 +6,6 @@ const { faq } = copy;
 
 <section class="bg-brand-canvas-100 px-6 py-16 sm:px-10 lg:px-16 lg:py-24">
   <div class="mx-auto max-w-content">
-    <div class="max-w-3xl space-y-5">
-      <span class="inline-flex rounded-full border border-brand-canvas-300 bg-white px-4 py-2 text-xs font-bold uppercase tracking-serene text-brand-plum-700">
-        {faq.eyebrow}
-      </span>
-      <h2 class="font-display text-4xl font-semibold leading-tight text-brand-plum-900 sm:text-5xl">
-        {faq.title}
-      </h2>
-    </div>
-
     <div class="mt-10 grid gap-4">
       {
         faq.items.map((item, index) => (
@@ -25,13 +16,28 @@ const { faq } = copy;
                 +
               </span>
             </summary>
-            <p class="mt-4 pr-12 text-base leading-8 text-brand-plum-700">
-              {item.answer}
-            </p>
+            <ul class="mt-4 space-y-3 pr-12">
+              {
+                item.answers.map((answer) => (
+                  <li class="flex items-start gap-3">
+                    <span class="mt-1 inline-flex h-6 w-6 flex-none items-center justify-center rounded-full bg-brand-gold-100 text-xs font-bold text-brand-gold-700">
+                      +
+                    </span>
+                    <span class="text-base leading-8 text-brand-plum-700">{answer}</span>
+                  </li>
+                ))
+              }
+            </ul>
           </details>
         ))
       }
     </div>
+
+    <a
+      href={faq.contactHref}
+      class="button-focus mt-8 flex rounded-3xl border border-brand-gold-200 bg-brand-gold-100 px-6 py-5 text-center shadow-soft transition duration-300 hover:-translate-y-0.5 hover:bg-brand-gold-200"
+    >
+      <span class="w-full font-display text-3xl font-semibold text-brand-plum-900">{faq.contactTitle}</span>
+    </a>
   </div>
 </section>
-

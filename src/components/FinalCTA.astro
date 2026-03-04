@@ -6,51 +6,83 @@ const { offer } = copy;
 
 <section id="conversion" class="bg-brand-plum-900 px-6 py-16 sm:px-10 lg:px-16 lg:py-24">
   <div class="mx-auto grid max-w-content gap-10 rounded-hero border border-white/10 bg-brand-plum-800 p-8 shadow-soft md:p-10 xl:grid-cols-[0.95fr_1.05fr] xl:p-12">
-    <div class="space-y-6">
-      <span class="inline-flex rounded-full bg-white/10 px-4 py-2 text-xs font-bold uppercase tracking-serene text-brand-gold-100">
-        {offer.eyebrow}
-      </span>
+    <div class="space-y-8">
       <h2 class="font-display text-4xl font-semibold leading-tight text-white sm:text-5xl">
         {offer.title}
       </h2>
-      <p class="text-lg leading-8 text-brand-lilac-100">
-        {offer.description}
-      </p>
 
-      <div class="rounded-3xl border border-brand-gold-300/30 bg-brand-gold-300/10 p-6">
-        <p class="text-sm font-bold uppercase tracking-serene text-brand-gold-100">{offer.priceLabel}</p>
-        <p class="mt-3 font-display text-5xl font-semibold text-brand-gold-300 sm:text-6xl">{offer.price}</p>
-        <p class="mt-4 text-sm leading-7 text-brand-lilac-50">{offer.priceFootnote}</p>
+      <div class="grid gap-6 lg:grid-cols-2">
+        <div class="rounded-3xl border border-white/10 bg-white/10 p-6">
+          <p class="text-sm font-bold tracking-[0.08em] text-brand-gold-100">{offer.benefitsLabel}</p>
+          <ul class="mt-5 space-y-3">
+            {
+              offer.benefits.map((item) => (
+                <li class="flex items-start gap-3">
+                  <span class="mt-1 inline-flex h-6 w-6 flex-none items-center justify-center rounded-full bg-brand-gold-100 text-xs font-bold text-brand-gold-700">
+                    +
+                  </span>
+                  <span class="text-sm leading-7 text-brand-lilac-50">{item}</span>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+
+        <div class="rounded-3xl border border-white/10 bg-white/10 p-6">
+          <p class="text-sm font-bold tracking-[0.08em] text-brand-gold-100">{offer.bonusesLabel}</p>
+          <ul class="mt-5 space-y-3">
+            {
+              offer.bonuses.map((item) => (
+                <li class="flex items-start gap-3">
+                  <span class="mt-1 inline-flex h-6 w-6 flex-none items-center justify-center rounded-full bg-brand-gold-100 text-xs font-bold text-brand-gold-700">
+                    +
+                  </span>
+                  <span class="text-sm leading-7 text-brand-lilac-50">{item}</span>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
       </div>
     </div>
 
     <div class="rounded-3xl bg-white p-6 text-brand-plum-900 sm:p-8">
-      <p class="text-sm font-bold uppercase tracking-serene text-brand-lilac-600">{offer.includesTitle}</p>
-      <ul class="mt-6 space-y-4">
-        {
-          offer.includes.map((item) => (
-            <li class="flex items-start gap-3">
-              <span class="mt-1 inline-flex h-6 w-6 flex-none items-center justify-center rounded-full bg-brand-gold-100 text-xs font-bold text-brand-gold-700">+</span>
-              <span class="text-base leading-7 text-brand-plum-800">{item}</span>
-            </li>
-          ))
-        }
-      </ul>
+      <div class="rounded-3xl border border-brand-canvas-200 bg-brand-canvas-50 p-6">
+        <p class="text-sm font-bold tracking-[0.08em] text-brand-plum-600">{offer.valueLabel}</p>
+        <p class="mt-3 text-lg font-semibold text-brand-plum-500 line-through">{offer.valueAmount}</p>
+        <p class="mt-5 text-sm font-bold tracking-[0.08em] text-brand-gold-700">{offer.priceLabel}</p>
+        <p class="mt-3 font-display text-5xl font-semibold text-brand-gold-700 sm:text-6xl">{offer.priceAmount}</p>
+        <p class="mt-4 text-sm leading-7 text-brand-plum-700">{offer.priceNote}</p>
+      </div>
 
       <a
-        href={offer.primaryCta.href}
+        href={offer.cta.href}
         class="button-focus mt-8 inline-flex w-full items-center justify-center rounded-full bg-brand-gold-300 px-7 py-4 text-sm font-bold uppercase tracking-[0.16em] text-brand-plum-900 shadow-glow transition duration-300 hover:-translate-y-0.5 hover:bg-brand-gold-400"
       >
-        {offer.primaryCta.label}
+        {offer.cta.label}
       </a>
 
       <div class="mt-5 rounded-3xl border border-brand-lilac-100 bg-brand-lilac-50 p-5">
-        <p class="text-xs font-bold uppercase tracking-serene text-brand-lilac-700">{offer.guarantee.label}</p>
-        <p class="mt-3 font-display text-2xl font-semibold leading-tight text-brand-plum-800">{offer.guarantee.title}</p>
-        <p class="mt-3 text-sm leading-7 text-brand-plum-700">{offer.guarantee.description}</p>
+        <div class="flex flex-col gap-5 sm:flex-row sm:items-center">
+          <img
+            src={offer.guaranteeImage}
+            alt={offer.guaranteeLabel}
+            class="h-24 w-24 flex-none object-contain"
+            loading="lazy"
+            decoding="async"
+          />
+          <div>
+            <p class="text-xs font-bold tracking-[0.08em] text-brand-lilac-700">{offer.guaranteeLabel}</p>
+            <div class="mt-3 space-y-2">
+              {
+                offer.guaranteeLines.map((line) => (
+                  <p class="text-sm leading-7 text-brand-plum-700">{line}</p>
+                ))
+              }
+            </div>
+          </div>
+        </div>
       </div>
-
-      <p class="mt-5 text-sm leading-7 text-brand-plum-600">{offer.secondaryNote}</p>
     </div>
   </div>
 </section>
@@ -58,14 +90,14 @@ const { offer } = copy;
 <div class="fixed inset-x-0 bottom-0 z-50 border-t border-brand-plum-700/40 bg-brand-plum-900/95 px-4 pb-[calc(0.75rem+env(safe-area-inset-bottom))] pt-3 backdrop-blur md:hidden">
   <div class="mx-auto flex max-w-content items-center gap-3 rounded-3xl border border-white/10 bg-brand-plum-800 px-3 py-3 shadow-soft">
     <div class="min-w-0 flex-1">
-      <p class="text-[0.65rem] font-bold uppercase tracking-serene text-brand-gold-100">{offer.priceLabel}</p>
-      <p class="truncate font-display text-2xl font-semibold text-brand-gold-300">{offer.price}</p>
+      <p class="text-[0.65rem] font-bold tracking-[0.08em] text-brand-gold-100">{offer.priceLabel}</p>
+      <p class="truncate font-display text-2xl font-semibold text-brand-gold-300">{offer.priceAmount}</p>
     </div>
     <a
-      href={offer.primaryCta.href}
+      href={offer.cta.href}
       class="button-focus inline-flex flex-none items-center justify-center rounded-full bg-brand-gold-300 px-5 py-3 text-xs font-bold uppercase tracking-[0.14em] text-brand-plum-900 shadow-glow transition duration-300 hover:bg-brand-gold-400"
     >
-      {offer.primaryCta.label}
+      {offer.cta.label}
     </a>
   </div>
 </div>
