@@ -9,10 +9,17 @@
 
   body {
     @apply min-h-screen bg-brand-canvas-100 font-sans text-brand-plum-900 antialiased;
+    padding-bottom: calc(6.5rem + env(safe-area-inset-bottom));
   }
 
   ::selection {
     @apply bg-brand-gold-300 text-brand-plum-900;
+  }
+
+  @media (min-width: 768px) {
+    body {
+      padding-bottom: 0;
+    }
   }
 }
 
@@ -21,4 +28,3 @@
     @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold-300 focus-visible:ring-offset-2 focus-visible:ring-offset-brand-canvas-100;
   }
 }
-

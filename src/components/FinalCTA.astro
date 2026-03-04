@@ -44,7 +44,28 @@ const { offer } = copy;
         {offer.primaryCta.label}
       </a>
 
+      <div class="mt-5 rounded-3xl border border-brand-lilac-100 bg-brand-lilac-50 p-5">
+        <p class="text-xs font-bold uppercase tracking-serene text-brand-lilac-700">{offer.guarantee.label}</p>
+        <p class="mt-3 font-display text-2xl font-semibold leading-tight text-brand-plum-800">{offer.guarantee.title}</p>
+        <p class="mt-3 text-sm leading-7 text-brand-plum-700">{offer.guarantee.description}</p>
+      </div>
+
       <p class="mt-5 text-sm leading-7 text-brand-plum-600">{offer.secondaryNote}</p>
     </div>
   </div>
 </section>
+
+<div class="fixed inset-x-0 bottom-0 z-50 border-t border-brand-plum-700/40 bg-brand-plum-900/95 px-4 pb-[calc(0.75rem+env(safe-area-inset-bottom))] pt-3 backdrop-blur md:hidden">
+  <div class="mx-auto flex max-w-content items-center gap-3 rounded-3xl border border-white/10 bg-brand-plum-800 px-3 py-3 shadow-soft">
+    <div class="min-w-0 flex-1">
+      <p class="text-[0.65rem] font-bold uppercase tracking-serene text-brand-gold-100">{offer.priceLabel}</p>
+      <p class="truncate font-display text-2xl font-semibold text-brand-gold-300">{offer.price}</p>
+    </div>
+    <a
+      href={offer.primaryCta.href}
+      class="button-focus inline-flex flex-none items-center justify-center rounded-full bg-brand-gold-300 px-5 py-3 text-xs font-bold uppercase tracking-[0.14em] text-brand-plum-900 shadow-glow transition duration-300 hover:bg-brand-gold-400"
+    >
+      {offer.primaryCta.label}
+    </a>
+  </div>
+</div>

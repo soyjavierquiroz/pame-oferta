@@ -5,10 +5,10 @@
   },
   "hero": {
     "eyebrow": "Inscripciones abiertas",
-    "headlineStart": "Convierte tu creatividad floral en una",
-    "headlineEmphasis": "oferta que vende",
-    "headlineEnd": "como una experiencia premium.",
-    "description": "Diseña una propuesta que combine belleza, estrategia y claridad para que tus clientas entiendan el valor, sientan urgencia y quieran reservar contigo desde el primer vistazo.",
+    "headlineStart": "Descubre la manera más simple y rápida de",
+    "headlineEmphasis": "generar ingresos",
+    "headlineEnd": "y crear un negocio exitoso en solo 9 semanas.",
+    "description": "Una propuesta diseñada para comunicar valor con claridad, elevar tu percepción de marca y ayudarte a presentar una oferta que se sienta lista para vender desde el primer día.",
     "primaryCta": {
       "label": "Quiero asegurar mi lugar",
       "href": "#conversion"
@@ -61,7 +61,7 @@
       "author": "Creadora floral",
       "role": "Edición de lanzamiento"
     },
-    "conversionNote": "Reserva hoy y recibe una base lista para adaptar a tu próxima campaña."
+    "conversionNote": "Reserva hoy y accede también a bonos especiales para lanzar con más impulso."
   },
   "benefits": {
     "eyebrow": "Por qué esta oferta funciona",
@@ -134,6 +134,54 @@
       "label": "Inscribirme ahora",
       "href": "https://oferta.pameflorescrea.com"
     },
-    "secondaryNote": "Cupos limitados para esta edición. Ideal si quieres lanzar pronto y verte premium desde el día uno."
+    "secondaryNote": "Cupos limitados para esta edición. Ideal si quieres lanzar pronto y verte premium desde el día uno.",
+    "guarantee": {
+      "label": "Garantía de satisfacción",
+      "title": "Toma la decisión con confianza y respaldo.",
+      "description": "Tu inscripción está acompañada por una garantía clara y simple para que avances con seguridad, sabiendo que tu inversión está protegida."
+    }
+  },
+  "bonus": {
+    "eyebrow": "Bonos exclusivos",
+    "badge": "GRATIS SOLO HOY",
+    "title": "Activa tu lanzamiento con extras pensados para acelerar resultados",
+    "description": "Además del programa principal, esta edición incluye recursos adicionales para ayudarte a salir más rápido, verte más profesional y convertir con más confianza.",
+    "items": [
+      {
+        "title": "Plantilla express de oferta",
+        "description": "Una base lista para adaptar tu mensaje principal y publicar sin empezar desde cero."
+      },
+      {
+        "title": "Guía de objeciones frecuentes",
+        "description": "Respuestas concretas para manejar dudas comunes y sostener el valor de tu oferta."
+      },
+      {
+        "title": "Checklist de lanzamiento en 1 día",
+        "description": "Una secuencia clara para revisar tu página, CTA y cierre antes de salir en vivo."
+      }
+    ],
+    "footnote": "Disponibles solo en esta ventana de inscripción y sin costo adicional."
+  },
+  "faq": {
+    "eyebrow": "Preguntas frecuentes",
+    "title": "Resuelve las dudas antes de reservar tu lugar",
+    "items": [
+      {
+        "question": "¿Necesito experiencia previa para aprovechar esta oferta?",
+        "answer": "No. La estructura está pensada para que puedas usarla incluso si aún estás afinando tu mensaje o tu proceso comercial."
+      },
+      {
+        "question": "¿Puedo adaptar el contenido a mi propia marca y servicios?",
+        "answer": "Sí. Todo el copy principal está centralizado en JSON para que puedas modificar textos, enfoque y matices sin reescribir la estructura."
+      },
+      {
+        "question": "¿Cuánto tiempo me toma dejarla lista para publicar?",
+        "answer": "Si ya tienes clara tu propuesta, puedes personalizar la base y publicarla en muy poco tiempo, incluso el mismo día."
+      },
+      {
+        "question": "¿Los bonos tienen un costo adicional?",
+        "answer": "No. Están incluidos como parte de esta edición y se activan dentro de la ventana promocional actual."
+      }
+    ]
   }
 }

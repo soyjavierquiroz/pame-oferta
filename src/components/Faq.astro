@@ -1,0 +1,37 @@
+---
+import copy from '../data/copy.json';
+
+const { faq } = copy;
+---
+
+<section class="bg-brand-canvas-100 px-6 py-16 sm:px-10 lg:px-16 lg:py-24">
+  <div class="mx-auto max-w-content">
+    <div class="max-w-3xl space-y-5">
+      <span class="inline-flex rounded-full border border-brand-canvas-300 bg-white px-4 py-2 text-xs font-bold uppercase tracking-serene text-brand-plum-700">
+        {faq.eyebrow}
+      </span>
+      <h2 class="font-display text-4xl font-semibold leading-tight text-brand-plum-900 sm:text-5xl">
+        {faq.title}
+      </h2>
+    </div>
+
+    <div class="mt-10 grid gap-4">
+      {
+        faq.items.map((item, index) => (
+          <details class="group rounded-3xl border border-brand-canvas-200 bg-white p-6 shadow-soft" open={index === 0}>
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 [&::-webkit-details-marker]:hidden">
+              <span class="pr-4 text-lg font-semibold text-brand-plum-900">{item.question}</span>
+              <span class="inline-flex h-9 w-9 flex-none items-center justify-center rounded-full bg-brand-lilac-100 text-xl font-bold text-brand-lilac-700 transition duration-300 group-open:rotate-45">
+                +
+              </span>
+            </summary>
+            <p class="mt-4 pr-12 text-base leading-8 text-brand-plum-700">
+              {item.answer}
+            </p>
+          </details>
+        ))
+      }
+    </div>
+  </div>
+</section>
+

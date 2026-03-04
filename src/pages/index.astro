@@ -1,5 +1,7 @@
 ---
+import BonusSection from '../components/BonusSection.astro';
 import FeaturesGrid from '../components/FeaturesGrid.astro';
+import Faq from '../components/Faq.astro';
 import FinalCTA from '../components/FinalCTA.astro';
 import Hero from '../components/Hero.astro';
 import SectionWave from '../components/SectionWave.astro';
@@ -14,6 +16,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <FeaturesGrid />
     <SectionWave className="text-brand-mint-100" />
     <SocialProof />
+    <SectionWave className="text-brand-lilac-50" />
+    <BonusSection />
+    <SectionWave className="text-brand-canvas-100" />
+    <Faq />
     <SectionWave className="text-brand-plum-900" />
     <FinalCTA />
   </main>
