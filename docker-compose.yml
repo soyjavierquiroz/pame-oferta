@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  app:
+    image: pame-oferta-frontend:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - drenvex_network
+    deploy:
+      placement:
+        constraints:
+          - node.role == manager
+      labels:
+        - "traefik.enable=true"
+        - "traefik.docker.network=drenvex_network"
+        - "traefik.http.routers.pame-oferta.rule=Host(`oferta.pameflorescrea.com`)"
+        - "traefik.http.routers.pame-oferta.entrypoints=websecure"
+        - "traefik.http.routers.pame-oferta.tls=true"
+        - "traefik.http.routers.pame-oferta.priority=100"
+        - "traefik.http.services.pame-oferta.loadbalancer.server.port=80"
+
+networks:
+  drenvex_network:
+    external: true

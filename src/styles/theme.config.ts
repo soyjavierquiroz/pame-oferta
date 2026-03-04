@@ -1,0 +1,71 @@
+export const pameTheme = {
+  colors: {
+    brand: {
+      lilac: {
+        50: '#fdf8ff',
+        100: '#f7ecff',
+        200: '#ebd1ff',
+        300: '#d9aefc',
+        400: '#be7cf3',
+        500: '#9d52dd',
+        600: '#7e34b3',
+        700: '#5e2485',
+        800: '#401658',
+        900: '#24092f',
+      },
+      gold: {
+        50: '#fffef4',
+        100: '#fff8cf',
+        200: '#ffec93',
+        300: '#ffdd57',
+        400: '#ffd335',
+        500: '#f0bb0c',
+        600: '#cc9500',
+        700: '#9d6c00',
+        800: '#694500',
+        900: '#3a2500',
+      },
+      canvas: {
+        50: '#fffefb',
+        100: '#fffaf2',
+        200: '#f7eddc',
+        300: '#e8dac1',
+        400: '#ccb999',
+        500: '#ac9474',
+        600: '#857058',
+        700: '#61503f',
+        800: '#43362b',
+        900: '#2d241d',
+      },
+      plum: {
+        50: '#f8f1fb',
+        100: '#eddaf5',
+        200: '#d9b7e8',
+        300: '#be89d6',
+        400: '#9d5bbd',
+        500: '#7b3d97',
+        600: '#612d76',
+        700: '#492158',
+        800: '#30143a',
+        900: '#1b0a21',
+      },
+    },
+    white: '#ffffff',
+  },
+  fontFamily: {
+    display: ['"Cormorant Garamond"', 'serif'],
+    sans: ['"Manrope"', 'sans-serif'],
+  },
+  boxShadow: {
+    soft: '0 30px 70px -35px rgba(73, 33, 88, 0.42)',
+    glow: '0 20px 50px -25px rgba(255, 221, 87, 0.65)',
+  },
+  borderRadius: {
+    hero: '2.25rem',
+  },
+  backgroundImage: {
+    'hero-glow':
+      'radial-gradient(circle at 18% 20%, rgba(217, 174, 252, 0.38), transparent 34%), radial-gradient(circle at 85% 8%, rgba(255, 221, 87, 0.48), transparent 30%), linear-gradient(135deg, rgba(255, 250, 242, 0.98), rgba(255, 255, 255, 0.96))',
+  },
+} as const;
+

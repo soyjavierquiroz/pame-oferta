@@ -1,0 +1,66 @@
+{
+  "seo": {
+    "title": "Pame Flores | Oferta Premium",
+    "description": "Landing page de alta conversión para presentar una oferta elegante, clara y lista para vender."
+  },
+  "hero": {
+    "eyebrow": "Inscripciones abiertas",
+    "headlineStart": "Convierte tu creatividad floral en una",
+    "headlineEmphasis": "oferta que vende",
+    "headlineEnd": "como una experiencia premium.",
+    "description": "Diseña una propuesta que combine belleza, estrategia y claridad para que tus clientas entiendan el valor, sientan urgencia y quieran reservar contigo desde el primer vistazo.",
+    "primaryCta": {
+      "label": "Quiero asegurar mi lugar",
+      "href": "#conversion"
+    },
+    "secondaryCta": {
+      "label": "Ver lo que incluye",
+      "href": "#beneficios"
+    },
+    "badges": [
+      "Estructura pensada para convertir",
+      "Copy completamente editable",
+      "Diseño listo para sentirse premium"
+    ],
+    "testimonialLabel": "Lo que dicen antes de reservar",
+    "features": [
+      {
+        "title": "Claridad desde el primer scroll",
+        "description": "La oferta explica qué haces, para quién es y por qué vale la pena sin fricción ni ruido."
+      },
+      {
+        "title": "Una estética que transmite valor",
+        "description": "Jerarquía limpia, formas orgánicas y detalles suaves para elevar la percepción de tu marca."
+      },
+      {
+        "title": "Urgencia elegante, no agresiva",
+        "description": "Llamados a la acción claros con una narrativa cálida que impulsa la decisión de compra."
+      }
+    ],
+    "proof": {
+      "label": "Cupo limitado",
+      "title": "Una landing lista para presentar tu próxima oferta estrella",
+      "description": "Ideal para creadoras que quieren comunicar transformación, sostener una imagen premium y vender con una experiencia digital tan cuidada como sus arreglos.",
+      "metrics": [
+        {
+          "value": "+3X",
+          "label": "más claridad en tu mensaje"
+        },
+        {
+          "value": "1 día",
+          "label": "para publicar tu oferta"
+        },
+        {
+          "value": "100%",
+          "label": "texto editable desde JSON"
+        }
+      ]
+    },
+    "testimonial": {
+      "quote": "Ahora mi propuesta se siente tan refinada como mi trabajo y la gente entiende el valor en segundos.",
+      "author": "Creadora floral",
+      "role": "Edición de lanzamiento"
+    },
+    "conversionNote": "Reserva hoy y recibe una base lista para adaptar a tu próxima campaña."
+  }
+}
