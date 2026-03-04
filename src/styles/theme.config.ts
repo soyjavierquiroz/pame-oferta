@@ -17,8 +17,8 @@ export const pameTheme = {
         50: '#fffdf5',
         100: '#fff9e9',
         200: '#fdf1c9',
-        300: '#f8e4a3',
-        400: '#efd37b',
+        300: '#ffd700',
+        400: '#f2cf6a',
         500: '#dec05d',
         600: '#b89a46',
         700: '#8d7435',
@@ -63,21 +63,22 @@ export const pameTheme = {
       },
     },
     white: '#ffffff',
+    black: '#111111',
   },
   fontFamily: {
     display: ['"Playfair Display"', 'serif'],
     sans: ['"Inter"', 'sans-serif'],
   },
   boxShadow: {
-    soft: '0 18px 40px -30px rgba(91, 67, 104, 0.18)',
-    glow: '0 14px 30px -22px rgba(222, 192, 93, 0.28)',
+    soft: '0 6px 16px -12px rgba(91, 67, 104, 0.12)',
+    glow: '0 10px 24px -18px rgba(222, 192, 93, 0.18)',
   },
   borderRadius: {
     hero: '2.25rem',
   },
   backgroundImage: {
     'hero-glow':
-      'radial-gradient(circle at 18% 20%, rgba(221, 205, 229, 0.5), transparent 34%), radial-gradient(circle at 85% 8%, rgba(248, 228, 163, 0.5), transparent 30%), linear-gradient(135deg, rgba(253, 252, 249, 0.99), rgba(255, 255, 255, 0.96))',
+      'radial-gradient(circle at 18% 20%, rgba(221, 205, 229, 0.5), transparent 34%), radial-gradient(circle at 85% 8%, rgba(255, 215, 0, 0.14), transparent 30%), linear-gradient(135deg, rgba(253, 252, 249, 0.99), rgba(255, 255, 255, 0.96))',
     'chat-grid':
       'radial-gradient(circle at 0.08rem 0.08rem, rgba(36, 170, 108, 0.12) 0.08rem, transparent 0), linear-gradient(135deg, rgba(245, 255, 251, 0.95), rgba(221, 248, 237, 0.95))',
   },

@@ -8,17 +8,17 @@ const cta = getElement(section, 'cta_repeat');
 const audienceItems = (bullets.items as string[]).map((item) => String(item));
 ---
 
-<section id="who_its_for" class="bg-white px-6 py-32 sm:px-10 lg:px-16">
-  <div class="mx-auto max-w-5xl">
-    <div class="mx-auto max-w-3xl space-y-10 text-center">
-      <p class="font-display text-4xl font-light leading-[1.18] tracking-[0.05em] text-brand-plum-900 sm:text-5xl">
+<section id="who_its_for" class="bg-brand-canvas-50 px-[10%] py-32 sm:px-10 lg:px-16">
+  <div class="mx-auto max-w-4xl">
+    <div class="mx-auto max-w-2xl space-y-12 text-center">
+      <p class="text-4xl leading-[1.18] tracking-[-0.02em] text-brand-plum-900 sm:text-5xl">
         {String(title.copy)}
       </p>
 
-      <div class="space-y-5 rounded-[3rem] bg-brand-canvas-100 px-5 py-6 sm:px-7 sm:py-8">
+      <div class="space-y-5 rounded-[3rem] bg-white px-5 py-6 shadow-sm sm:px-7 sm:py-8">
         {
           audienceItems.map((item) => (
-            <p class="rounded-[2.25rem] bg-white px-5 py-4 text-left text-[15px] font-normal leading-loose text-brand-plum-800 shadow-sm">
+            <p class="rounded-[2.25rem] bg-brand-canvas-50 px-5 py-4 text-left text-[15px] font-normal leading-loose text-brand-plum-800 shadow-sm">
               {item}
             </p>
           ))
@@ -26,7 +26,7 @@ const audienceItems = (bullets.items as string[]).map((item) => String(item));
 
         <a
           href="#price_guarantee_checkout"
-          class="button-focus inline-flex items-center justify-center rounded-full bg-brand-gold-300 px-8 py-4 text-sm font-semibold uppercase tracking-[0.18em] text-brand-plum-900 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:bg-brand-gold-400"
+          class="button-focus inline-flex items-center justify-center rounded-full bg-brand-gold-300 px-8 py-4 text-sm font-semibold uppercase tracking-[0.18em] text-black shadow-sm transition duration-300 hover:-translate-y-0.5 hover:bg-brand-gold-400"
         >
           {String(cta.copy)}
         </a>

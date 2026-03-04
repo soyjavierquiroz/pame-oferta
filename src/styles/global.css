@@ -10,8 +10,15 @@
   body {
     @apply min-h-screen bg-brand-canvas-50 font-sans text-brand-plum-900 antialiased;
     font-size: 15px;
-    line-height: 1.95;
+    line-height: 1.8;
     padding-bottom: calc(6.5rem + env(safe-area-inset-bottom));
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-display font-normal;
+    letter-spacing: -0.02em;
   }
 
   ::selection {
@@ -27,6 +34,6 @@
 
 @layer components {
   .button-focus {
-    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold-300 focus-visible:ring-offset-2 focus-visible:ring-offset-brand-canvas-100;
+    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold-200 focus-visible:ring-offset-2 focus-visible:ring-offset-brand-canvas-50;
   }
 }

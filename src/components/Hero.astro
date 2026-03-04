@@ -11,24 +11,24 @@ const quickFacts = (snapshot.items as string[]).map((item) => String(item));
 const anchors = funnel.conversion_addons_recommended.anchors;
 ---
 
-<section id="hero" class="relative isolate overflow-hidden px-6 pt-10 sm:px-10 lg:px-16">
+<section id="hero" class="relative isolate overflow-hidden px-[10%] pt-10 sm:px-10 lg:px-16">
   <div class="absolute inset-x-0 top-0 -z-20 h-[44rem] bg-hero-glow"></div>
   <div class="absolute -left-10 top-24 -z-10 h-56 w-56 rounded-[40%_60%_52%_48%/46%_40%_60%_54%] bg-brand-lilac-100/80 blur-3xl"></div>
   <div class="absolute -right-10 top-20 -z-10 h-64 w-64 rounded-[55%_45%_35%_65%/45%_61%_39%_55%] bg-brand-gold-100/80 blur-3xl"></div>
 
-  <div class="mx-auto max-w-5xl py-32">
-    <div class="mx-auto max-w-3xl space-y-10 text-center">
-      <h1 class="font-display text-5xl font-light leading-[1.14] tracking-[0.04em] text-brand-plum-900 sm:text-6xl lg:text-7xl">
+  <div class="mx-auto max-w-4xl py-32">
+    <div class="mx-auto max-w-2xl space-y-12 text-center">
+      <h1 class="text-5xl leading-[1.14] tracking-[-0.02em] text-brand-plum-900 sm:text-6xl lg:text-7xl">
         {String(headline.copy)}
       </h1>
 
-      <p class="font-display text-3xl font-light tracking-[0.08em] text-brand-lilac-600 sm:text-4xl">
+      <p class="text-3xl tracking-[-0.02em] text-brand-lilac-600 sm:text-4xl">
         {String(subheadline.copy)}
       </p>
 
       <a
         href="#price_guarantee_checkout"
-        class="button-focus inline-flex items-center justify-center rounded-full bg-brand-gold-300 px-8 py-4 text-sm font-semibold uppercase tracking-[0.18em] text-brand-plum-900 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:bg-brand-gold-400 animate-pulse hover:animate-none"
+        class="button-focus inline-flex items-center justify-center rounded-full bg-brand-gold-300 px-8 py-4 text-sm font-semibold uppercase tracking-[0.18em] text-black shadow-sm transition duration-300 hover:-translate-y-0.5 hover:bg-brand-gold-400 animate-pulse hover:animate-none"
       >
         {String(cta.copy)}
       </a>
@@ -48,7 +48,7 @@ const anchors = funnel.conversion_addons_recommended.anchors;
           anchors.map((item) => (
             <a
               href={`#${item.target_section_id}`}
-              class="button-focus inline-flex items-center justify-center rounded-full bg-white px-4 py-3 text-[11px] font-semibold uppercase tracking-[0.14em] text-brand-lilac-700 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:bg-brand-lilac-50"
+              class="button-focus inline-flex items-center justify-center rounded-full bg-white px-4 py-3 text-[11px] font-semibold uppercase tracking-[0.14em] text-brand-lilac-700 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:bg-brand-canvas-50"
             >
               {item.label}
             </a>
@@ -57,7 +57,7 @@ const anchors = funnel.conversion_addons_recommended.anchors;
       </div>
     </div>
 
-    <div class="mx-auto mt-16 grid max-w-3xl gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+    <div class="mx-auto mt-20 grid max-w-3xl gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
       <div class="overflow-hidden rounded-[3rem] bg-white p-4 shadow-sm sm:p-5">
         <img
           src="/imagenes/pame2.webp"
@@ -75,7 +75,7 @@ const anchors = funnel.conversion_addons_recommended.anchors;
               class:list={[
                 index === 0
                   ? 'text-sm font-semibold tracking-[0.12em] text-brand-lilac-600'
-                  : 'mt-5 font-display text-5xl font-light leading-none tracking-[0.05em] text-brand-plum-900 sm:text-6xl',
+                  : 'mt-5 text-5xl leading-none tracking-[-0.02em] text-brand-plum-900 sm:text-6xl',
               ]}
             >
               {line}
