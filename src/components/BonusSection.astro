@@ -1,48 +1,118 @@
 ---
-import copy from '../data/copy.json';
+import { getElements, getSection, splitLines } from '../data/funnel';
 
-const { bonus } = copy;
+const section = getSection('bonuses');
+const sectionTitle = getElement(section, 'section_title');
+const groups = getElements(section, 'bonus_group');
+const special = getElement(section, 'bonus_special');
+
+function getElement(sectionRef: typeof section, type: string) {
+  const element = sectionRef.elements.find((item) => item.type === type);
+  if (!element) {
+    throw new Error(`Missing element "${type}" in section "${sectionRef.id}"`);
+  }
+  return element as Record<string, unknown>;
+}
+
+const bonusImages = [
+  '/imagenes/fotoyvideos.webp',
+  '/imagenes/emprende.webp',
+  '/imagenes/kit-calculadora-magica.webp',
+  '/imagenes/reto-21-dias.webp',
+  '/imagenes/envio-perfecto.webp',
+  '/imagenes/jc_logo.png.webp',
+  '/imagenes/disena-canva.webp',
+  '/imagenes/imprime-y-vende.webp',
+  '/imagenes/bonos.webp',
+];
+
+let imageIndex = 0;
+const groupedBonuses = groups.map((group) => {
+  const items = ((group.items as Array<Record<string, unknown>>) || []).map((item) => {
+    const mapped = {
+      title: String(item.title),
+      copy: String(item.copy),
+      image: bonusImages[imageIndex],
+    };
+    imageIndex += 1;
+    return mapped;
+  });
+
+  return {
+    title: String(group.title),
+    mappedItems: items,
+  };
+});
+
+const specialItem = {
+  title: String((special.item as Record<string, unknown>).title),
+  copy: String((special.item as Record<string, unknown>).copy),
+};
+const specialTitle = String(special.title);
 ---
 
-<section class="bg-brand-lilac-50 px-6 py-16 sm:px-10 lg:px-16 lg:py-24">
-  <div class="mx-auto max-w-content">
-    <div class="space-y-6 text-center">
-      <h2 class="font-display text-4xl font-semibold leading-tight text-brand-plum-900 sm:text-5xl">
-        {bonus.title}
-      </h2>
-      <p class="text-lg font-semibold text-brand-gold-700">{bonus.value}</p>
-      <p class="mx-auto max-w-3xl text-lg leading-8 text-brand-plum-700">{bonus.description}</p>
+<section id="bonuses" class="bg-brand-lilac-50 px-6 py-20 sm:px-10 lg:px-16 lg:py-28">
+  <div class="mx-auto max-w-content space-y-10">
+    <div class="space-y-4 text-center">
+      {splitLines(String(sectionTitle.copy)).map((line, index) => (
+        <p
+          class:list={[
+            index === 0
+              ? 'font-display text-4xl font-semibold leading-tight text-brand-plum-900 sm:text-5xl'
+              : 'text-base leading-relaxed text-brand-plum-700 sm:text-lg',
+          ]}
+        >
+          {line}
+        </p>
+      ))}
     </div>
 
-    <div class="mt-10 space-y-10">
-      {
-        bonus.categories.map((category) => (
-          <div class="space-y-5">
-            <p class="text-sm font-bold uppercase tracking-serene text-brand-lilac-700">{category.title}</p>
-            <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-              {
-                category.items.map((item) => (
-                  <article class="overflow-hidden rounded-3xl border border-brand-lilac-100 bg-white shadow-soft xl:col-auto">
-                    <img
-                      src={item.image}
-                      alt={item.title}
-                      class="h-48 w-full object-cover"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                    <div class="p-6">
-                      <h3 class="font-display text-3xl font-semibold leading-tight text-brand-plum-900">
-                        {item.title}
-                      </h3>
-                      <p class="mt-4 text-sm leading-7 text-brand-plum-700">{item.description}</p>
-                    </div>
-                  </article>
-                ))
-              }
-            </div>
-          </div>
-        ))
-      }
+    {groupedBonuses.map((group) => (
+      <div class="space-y-5">
+        <p class="text-sm font-bold tracking-[0.08em] text-brand-lilac-700">{String(group.title)}</p>
+        <div class="grid gap-6 md:grid-cols-2">
+          {group.mappedItems.map((item) => (
+            <article class="grid gap-5 rounded-hero border border-brand-lilac-100 bg-white p-6 shadow-soft sm:p-8">
+              <img
+                src={item.image}
+                alt={item.title}
+                class="h-48 w-full rounded-3xl object-cover"
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="space-y-4">
+                <h3 class="font-display text-3xl font-semibold leading-tight text-brand-plum-900">
+                  {item.title}
+                </h3>
+                {splitLines(item.copy).map((line) => (
+                  <p class="text-sm leading-relaxed text-brand-plum-700 sm:text-base">{line}</p>
+                ))}
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    ))}
+
+    <div class="space-y-5">
+      <p class="text-sm font-bold tracking-[0.08em] text-brand-lilac-700">{specialTitle}</p>
+      <article class="grid gap-5 rounded-hero border border-brand-lilac-100 bg-white p-6 shadow-soft sm:p-8 lg:grid-cols-[0.34fr_0.66fr] lg:items-center">
+        <img
+          src={bonusImages[bonusImages.length - 1]}
+          alt={specialItem.title}
+          class="h-56 w-full rounded-3xl object-cover"
+          loading="lazy"
+          decoding="async"
+        />
+        <div class="space-y-4">
+          <h3 class="font-display text-3xl font-semibold leading-tight text-brand-plum-900 sm:text-4xl">
+            {specialItem.title}
+          </h3>
+          {splitLines(specialItem.copy).map((line) => (
+            <p class="text-sm leading-relaxed text-brand-plum-700 sm:text-base">{line}</p>
+          ))}
+        </div>
+      </article>
     </div>
   </div>
 </section>

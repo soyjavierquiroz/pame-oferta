@@ -1,73 +1,84 @@
 ---
-import copy from '../data/copy.json';
+import { funnel, getElement, getSection, splitLines } from '../data/funnel';
 
-const { hero } = copy;
+const section = getSection('hero');
+const headline = getElement(section, 'headline');
+const subheadline = getElement(section, 'subheadline');
+const cta = getElement(section, 'cta_primary');
+const snapshot = getElement(section, 'offer_snapshot');
+const priceAnchor = getElement(section, 'price_anchor');
+const quickFacts = (snapshot.items as string[]).map((item) => String(item));
+const anchors = funnel.conversion_addons_recommended.anchors;
 ---
 
-<section class="relative isolate overflow-hidden px-6 pb-20 pt-8 sm:px-10 lg:px-16 lg:pb-24 lg:pt-12">
-  <div class="absolute inset-x-0 top-0 -z-20 h-[38rem] bg-hero-glow"></div>
-  <div class="absolute -left-16 top-24 -z-10 h-56 w-56 rounded-[38%_62%_54%_46%/43%_48%_52%_57%] bg-brand-lilac-200/70 blur-3xl"></div>
-  <div class="absolute -right-12 bottom-20 -z-10 h-64 w-64 rounded-[55%_45%_35%_65%/45%_61%_39%_55%] bg-brand-gold-200/80 blur-3xl"></div>
+<section id="hero" class="relative isolate overflow-hidden px-6 pb-14 pt-8 sm:px-10 sm:pb-16 lg:px-16 lg:pb-20 lg:pt-12">
+  <div class="absolute inset-x-0 top-0 -z-20 h-[40rem] bg-hero-glow"></div>
+  <div class="absolute -left-12 top-32 -z-10 h-56 w-56 rounded-[40%_60%_52%_48%/46%_40%_60%_54%] bg-brand-lilac-100 blur-3xl"></div>
+  <div class="absolute -right-12 top-24 -z-10 h-64 w-64 rounded-[55%_45%_35%_65%/45%_61%_39%_55%] bg-brand-gold-100 blur-3xl"></div>
 
-  <div class="mx-auto grid max-w-content gap-10 rounded-hero border border-brand-lilac-100/80 bg-white/90 p-8 shadow-soft backdrop-blur md:p-10 xl:grid-cols-[1.08fr_0.92fr] xl:p-12">
+  <div class="mx-auto grid max-w-content gap-10 rounded-hero border border-brand-canvas-200 bg-white/95 p-8 shadow-soft backdrop-blur sm:p-10 xl:grid-cols-[1.02fr_0.98fr] xl:p-12">
     <div class="space-y-8">
-      <p class="max-w-2xl text-sm font-semibold tracking-[0.08em] text-brand-lilac-700">
-        {hero.eyebrow}
-      </p>
-
-      <div class="space-y-5">
-        <h1 class="max-w-3xl font-display text-5xl font-semibold leading-tight text-brand-plum-900 sm:text-6xl lg:text-7xl">
-          {hero.headline}
+      <div class="space-y-6">
+        <h1 class="font-display text-5xl font-semibold leading-tight tracking-[0.01em] text-brand-plum-900 sm:text-6xl lg:text-7xl">
+          {String(headline.copy)}
         </h1>
-        <p class="font-display text-3xl font-semibold text-brand-gold-700 sm:text-4xl">{hero.subheadline}</p>
-        <p class="max-w-2xl text-lg leading-8 text-brand-plum-700 sm:text-xl">
-          {hero.description}
+        <p class="font-display text-3xl font-semibold tracking-[0.03em] text-brand-gold-700 sm:text-4xl">
+          {String(subheadline.copy)}
         </p>
       </div>
 
-      <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
+      <div class="flex flex-col gap-4 sm:flex-row">
         <a
-          href={hero.cta.href}
+          href="#price_guarantee_checkout"
           class="button-focus inline-flex items-center justify-center rounded-full bg-brand-gold-300 px-7 py-4 text-sm font-bold uppercase tracking-[0.16em] text-brand-plum-900 shadow-glow transition duration-300 hover:-translate-y-0.5 hover:bg-brand-gold-400 animate-pulse hover:animate-none"
         >
-          {hero.cta.label}
+          {String(cta.copy)}
         </a>
       </div>
 
       <div class="flex flex-wrap gap-3">
-        {
-          hero.quickFacts.map((fact) => (
-            <span class="rounded-full bg-brand-canvas-50 px-4 py-2 text-sm font-semibold text-brand-plum-700 ring-1 ring-inset ring-brand-canvas-200">
-              {fact}
-            </span>
-          ))
-        }
+        {quickFacts.map((item) => (
+          <span class="rounded-full border border-brand-canvas-200 bg-brand-canvas-50 px-4 py-2 text-sm font-semibold text-brand-plum-700">
+            {item}
+          </span>
+        ))}
+      </div>
+
+      <div class="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
+        {anchors.map((item) => (
+          <a
+            href={`#${item.target_section_id}`}
+            class="button-focus inline-flex items-center justify-center rounded-full border border-brand-lilac-200 bg-brand-lilac-50 px-4 py-3 text-xs font-bold uppercase tracking-[0.12em] text-brand-lilac-700 transition duration-300 hover:-translate-y-0.5 hover:bg-brand-lilac-100"
+          >
+            {item.label}
+          </a>
+        ))}
       </div>
     </div>
 
-    <div class="relative rounded-hero bg-brand-plum-800 p-6 text-white shadow-soft sm:p-8">
-      <div class="absolute right-6 top-6 h-20 w-20 rounded-[62%_38%_58%_42%/38%_42%_58%_62%] bg-brand-gold-300/90 blur-2xl"></div>
-      <img
-        src={hero.image.src}
-        alt={hero.image.alt}
-        class="relative z-10 mx-auto h-72 w-full rounded-3xl object-cover object-top"
-        loading="eager"
-        decoding="async"
-      />
-      <div class="relative z-10 mt-6 rounded-3xl bg-white px-5 py-6 text-brand-plum-900">
-        <p class="font-display text-3xl font-semibold leading-tight text-brand-plum-800">{hero.fitTitle}</p>
-        <ul class="mt-5 space-y-3">
-          {
-            hero.fitItems.map((item) => (
-              <li class="flex items-start gap-3">
-                <span class="mt-1 inline-flex h-6 w-6 flex-none items-center justify-center rounded-full bg-brand-gold-100 text-xs font-bold text-brand-gold-700">
-                  +
-                </span>
-                <span class="text-sm leading-7 text-brand-plum-700">{item}</span>
-              </li>
-            ))
-          }
-        </ul>
+    <div class="space-y-6">
+      <div class="overflow-hidden rounded-hero bg-brand-plum-800 p-4 shadow-soft sm:p-5">
+        <img
+          src="/imagenes/pame2.webp"
+          alt={String(headline.copy)}
+          class="h-72 w-full rounded-3xl object-cover object-top"
+          loading="eager"
+          decoding="async"
+        />
+      </div>
+
+      <div class="rounded-hero border border-brand-gold-200 bg-brand-gold-100 p-6 shadow-soft sm:p-8">
+        {splitLines(String(priceAnchor.copy)).map((line, index) => (
+          <p
+            class:list={[
+              index === 0
+                ? 'text-sm font-bold tracking-[0.08em] text-brand-plum-700'
+                : 'mt-4 font-display text-5xl font-semibold leading-none text-brand-plum-900 sm:text-6xl',
+            ]}
+          >
+            {line}
+          </p>
+        ))}
       </div>
     </div>
   </div>

@@ -1,39 +1,54 @@
 ---
-import copy from '../data/copy.json';
+import { getElement, getSection } from '../data/funnel';
 
-const { transformation } = copy;
+const section = getSection('future_pacing');
+const title = getElement(section, 'section_title');
+const visions = getElement(section, 'vision_blocks');
+const cta = getElement(section, 'cta_repeat');
+
+const images = [
+  '/imagenes/disena-canva.webp',
+  '/imagenes/pack-3productos.webp',
+  '/imagenes/shopping-feliz.webp',
+  '/imagenes/familia.jpg.webp',
+  '/imagenes/emprende.webp',
+];
+const visionItems = ((visions.items as Array<Record<string, string>>) || []).map((item, index) => ({
+  copy: String(item.copy),
+  image: images[index],
+}));
 ---
 
-<section class="bg-brand-canvas-50 px-6 py-16 sm:px-10 lg:px-16 lg:py-24">
-  <div class="mx-auto max-w-content">
-    <div class="max-w-3xl">
-      <h2 class="font-display text-4xl font-semibold leading-tight text-brand-plum-900 sm:text-5xl">
-        {transformation.eyebrow}
-      </h2>
+<section id="future_pacing" class="bg-brand-canvas-50 px-6 py-20 sm:px-10 lg:px-16 lg:py-28">
+  <div class="mx-auto max-w-content space-y-10">
+    <div class="space-y-5 text-center">
+      <p class="font-display text-4xl font-semibold leading-tight text-brand-plum-900 sm:text-5xl">
+        {String(title.copy)}
+      </p>
     </div>
 
-    <div class="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-5">
-      {
-        transformation.items.map((item) => (
-          <article class="flex h-full flex-col overflow-hidden rounded-3xl border border-brand-canvas-200 bg-white shadow-soft">
-            <img
-              src={item.image}
-              alt={item.text}
-              class="h-48 w-full object-cover"
-              loading="lazy"
-              decoding="async"
-            />
-            <div class="flex flex-1 items-start p-5">
-              <p class="text-sm leading-7 text-brand-plum-800">{item.text}</p>
-            </div>
-          </article>
-        ))
-      }
+    <div class="grid gap-8 lg:grid-cols-2">
+      {visionItems.map((item) => (
+        <article class="grid gap-5 rounded-hero border border-brand-canvas-200 bg-white p-6 shadow-soft sm:p-8 lg:grid-cols-[0.32fr_0.68fr] lg:items-center">
+          <img
+            src={item.image}
+            alt={item.copy}
+            class="h-40 w-full rounded-3xl object-cover"
+            loading="lazy"
+            decoding="async"
+          />
+          <p class="text-sm leading-relaxed text-brand-plum-800 sm:text-base">{item.copy}</p>
+        </article>
+      ))}
     </div>
 
-    <div class="mt-8 rounded-3xl border border-brand-gold-200 bg-brand-gold-100 px-6 py-5 text-center">
-      <p class="font-display text-3xl font-semibold text-brand-plum-900">{transformation.closing}</p>
+    <div class="text-center">
+      <a
+        href="#price_guarantee_checkout"
+        class="button-focus inline-flex items-center justify-center rounded-full bg-brand-gold-300 px-7 py-4 text-sm font-bold uppercase tracking-[0.16em] text-brand-plum-900 shadow-glow transition duration-300 hover:-translate-y-0.5 hover:bg-brand-gold-400"
+      >
+        {String(cta.copy)}
+      </a>
     </div>
   </div>
 </section>
-

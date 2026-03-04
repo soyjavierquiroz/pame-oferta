@@ -1,0 +1,35 @@
+---
+import { getElement, getSection } from '../data/funnel';
+
+const section = getSection('who_its_for');
+const title = getElement(section, 'section_title');
+const bullets = getElement(section, 'audience_bullets');
+const cta = getElement(section, 'cta_repeat');
+const audienceItems = (bullets.items as string[]).map((item) => String(item));
+---
+
+<section id="who_its_for" class="bg-white px-6 py-20 sm:px-10 lg:px-16 lg:py-28">
+  <div class="mx-auto grid max-w-content gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+    <div class="space-y-5">
+      <p class="font-display text-4xl font-semibold leading-tight text-brand-plum-900 sm:text-5xl">
+        {String(title.copy)}
+      </p>
+      <a
+        href="#price_guarantee_checkout"
+        class="button-focus hidden rounded-full bg-brand-gold-300 px-6 py-4 text-sm font-bold uppercase tracking-[0.14em] text-brand-plum-900 shadow-glow transition duration-300 hover:-translate-y-0.5 hover:bg-brand-gold-400 lg:inline-flex"
+      >
+        {String(cta.copy)}
+      </a>
+    </div>
+
+    <div class="rounded-hero border border-brand-canvas-200 bg-brand-canvas-50 p-6 shadow-soft sm:p-8">
+      <ul class="space-y-4">
+        {audienceItems.map((item) => (
+          <li class="rounded-3xl bg-white px-5 py-4 text-sm leading-relaxed text-brand-plum-800">
+            {item}
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</section>

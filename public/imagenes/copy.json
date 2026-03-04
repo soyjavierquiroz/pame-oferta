@@ -1,0 +1,326 @@
+{
+  "funnel": {
+    "type": "landing_checkout_hotmart_2step",
+    "traffic_temperature": "warm_launch",
+    "primary_goal": "more_sales",
+    "primary_objection": "no_card_alternative_payment",
+    "checkout_platform": "Hotmart"
+  },
+  "layout_rules": {
+    "copy_integrity": "no_changes_to_original_copy",
+    "allowed_actions": [
+      "reorder_sections",
+      "repeat_existing_cta",
+      "add_navigation_anchors",
+      "add_ui_blocks_without_modifying_original_copy"
+    ]
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "label": "HERO",
+      "placement": "above_the_fold",
+      "elements": [
+        {
+          "type": "headline",
+          "copy": "En solo 9 semanas, aprende el sistema paso a paso para crear y vender Juguetes Creativos irresistibles y empezar a generar ingresos reales desde casa con un negocio alineado a tu vida."
+        },
+        { "type": "subheadline", "copy": "Aunque hoy empieces desde cero." },
+        { "type": "cta_primary", "copy": "QUIERO MI CUPO AHORA", "action": "scroll_to_checkout_or_hotmart" },
+        {
+          "type": "offer_snapshot",
+          "items": ["Acceso por 1 año", "Comunidad y soporte", "7 días de garantía", "Método"]
+        },
+        {
+          "type": "price_anchor",
+          "copy": "Programa valuado en 1497\nHoy solo 197",
+          "note": "For warm traffic, showing price early can increase qualified clicks."
+        }
+      ]
+    },
+    {
+      "id": "payment_friction_fix",
+      "label": "PAYMENT_TRUST_AND_OPTIONS",
+      "placement": "high",
+      "elements": [
+        {
+          "type": "ui_block_optional",
+          "name": "payment_options_banner",
+          "copy_suggestion_optional": "¿No tienes tarjeta? Escríbenos y te ayudamos con opciones de pago disponibles en tu país.",
+          "cta_optional": "Tienes preguntas escríbenos",
+          "asset": { "type": "icon_placeholder", "copy": "Icono WhatsApp" },
+          "goal": "capture_no-card leads before they bounce"
+        },
+        {
+          "type": "ui_block_optional",
+          "name": "hotmart_note",
+          "copy_suggestion_optional": "En Hotmart verás el precio en tu moneda local según tu país.",
+          "goal": "reduce confusion about USD vs local currency"
+        }
+      ]
+    },
+    {
+      "id": "who_its_for",
+      "label": "WHO_IS_THIS_FOR",
+      "placement": "very_high",
+      "elements": [
+        { "type": "section_title", "copy": "🎯 Este programa es para ti si…" },
+        {
+          "type": "audience_bullets",
+          "items": [
+            "💛 Eres mamá y quieres generar ingresos extras sin descuidar a tu familia.",
+            "💛 Tienes formación en educación infantil y quieres un negocio alineado con tu profesión y tus valores.",
+            "💛 Sabes que tienes talento, pero no has logrado convertirlo en un proyecto rentable y estructurado.",
+            "💛 Estás cansada de empezar cosas que no se sienten tuyas ni conectadas con tu propósito.",
+            "💛 Has invertido en cursos de marketing, pero ninguno te enseñó cómo monetizar lo que realmente amas."
+          ]
+        },
+        { "type": "cta_repeat", "copy": "QUIERO MI CUPO AHORA" }
+      ]
+    },
+    {
+      "id": "future_pacing",
+      "label": "FUTURE_PACING",
+      "placement": "high",
+      "elements": [
+        { "type": "section_title", "copy": "💫 Quiero que imagines esto…" },
+        {
+          "type": "vision_blocks",
+          "items": [
+            { "copy": "Que dominas la creación de Juguetes Creativos irresistibles que no solo se ven hermosos, sino que realmente estimulan y enamoran a los niños.", "asset": "Foto" },
+            { "copy": "Que sabes exactamente qué diseñar, cómo estructurarlo y por qué funciona, sin improvisar ni dudar.", "asset": "Foto" },
+            { "copy": "Que comienzas a recibir pedidos y mensajes de mamás agradecidas que te recomiendan porque sienten el valor de lo que haces.", "asset": "Foto" },
+            { "copy": "Que puedes generar ingresos desde casa mientras sigues presente en los momentos importantes con tu familia.", "asset": "Foto" },
+            { "copy": "Que tu talento deja de ser un hobby y se convierte en un negocio real, alineado contigo y con la vida que deseas construir.", "asset": "Foto" }
+          ]
+        },
+        { "type": "cta_repeat", "copy": "QUIERO MI CUPO AHORA" }
+      ]
+    },
+    {
+      "id": "offer_intro",
+      "label": "OFFER",
+      "placement": "mid",
+      "elements": [
+        { "type": "bridge", "copy": "💎 Entonces, hagamos que pase." },
+        {
+          "type": "offer_intro",
+          "copy": "Te presento la Certificación de Juguetería Creativa Profesional.\nUn programa estructurado de 9 semanas donde aprenderás el paso a paso para crear Juguetes Creativos irresistibles y convertir tu talento en un negocio real que genera ingresos desde casa."
+        },
+        {
+          "type": "mechanism",
+          "copy": "✨ La Certificación está diseñada como un proceso claro y paso a paso\nNo es un curso suelto.\nEs un camino estructurado para que en 9 semanas pases de tener ideas… a tener un proyecto real."
+        }
+      ]
+    },
+    {
+      "id": "curriculum",
+      "label": "CURRICULUM",
+      "elements": [
+        {
+          "type": "phase",
+          "title": "🔹 FASE 1 — Bases Profesionales",
+          "copy": "Aquí construyes los cimientos.\nAprendes las bases que hacen que un Juguete Creativo se vea profesional, funcione bien y tenga valor.\nDejas de improvisar.\nEmpiezas a crear con intención.\nDesde el inicio trabajarás con modelos guiados para ganar seguridad y confianza.",
+          "asset": "Foto"
+        },
+        {
+          "type": "phase",
+          "title": "🔹 FASE 2 — Diseño con Dirección",
+          "copy": "Aprendes a diseñar productos que no solo sean lindos, sino que realmente gusten y se vendan.\nEntiendes qué hace que un juguete destaque, cómo mejorar tus ideas y cómo desarrollar tu propio estilo sin copiar.\nAquí comienzas a crear con criterio.",
+          "asset": "Foto"
+        },
+        {
+          "type": "phase",
+          "title": "🔹 FASE 3 — Tus Primeras Ventas",
+          "copy": "Aquí conviertes lo que haces en algo que genera ingresos.\nAprendes cómo presentar tus productos, cómo poner precios con seguridad y cómo empezar a vender sin sentir presión ni incomodidad.\nPasas de crear por gusto… a vender con claridad.",
+          "asset": "Foto"
+        },
+        {
+          "type": "phase",
+          "title": "🔹 FASE 4 — Tu Proyecto con Propósito",
+          "copy": "Aquí organizas todo para que tu emprendimiento tenga dirección.\nNo se trata solo de vender una vez, sino de construir algo que puedas sostener y que esté alineado con tu vida y tus valores.\nUn proyecto que te haga sentir orgullosa.",
+          "asset": "Foto"
+        }
+      ]
+    },
+    {
+      "id": "deliverables_support",
+      "label": "DELIVERABLES_AND_SUPPORT",
+      "elements": [
+        {
+          "type": "deliverable",
+          "title": "🎓 Además, trabajarás con 8 modelos de libros sensoriales",
+          "copy": "Modelos listos para aplicar que te permiten:\n✔ Practicar con guía\n✔ No empezar desde cero\n✔ Ganar confianza más rápido\n✔ Salir al mercado con productos reales\nNo estarás sola.\nNo tendrás que inventarlo todo.",
+          "asset": "Foto"
+        },
+        {
+          "type": "support",
+          "title": "🔴 Sesiones en vivo",
+          "copy": "No estarás sola viendo clases grabadas.\nTendrás sesiones en vivo donde podrás:\n✔ Resolver tus dudas en el momento\n✔ Ver procesos paso a paso\n✔ Avanzar con claridad y confianza\n✔ Sentirte acompañada en cada etapa\nY si no puedes conectarte, tendrás acceso a las repeticiones.\nAprendes, aplicas y avanzas.",
+          "asset": "Foto"
+        },
+        {
+          "type": "community",
+          "title": "🌎 Comunidad Internacional de Jugueteras Creativas",
+          "copy": "Formarás parte de una comunidad activa de mujeres que, como tú, decidieron convertir su creatividad en un proyecto real.\n\nAquí encontrarás:\n✔ Apoyo\n✔ Motivación\n✔ Inspiración\n✔ Experiencias reales\n✔ Networking y colaboración\nNo emprendes sola.\nCaminas acompañada."
+        },
+        {
+          "type": "access",
+          "title": "🎓 Acceso completo por 1 año",
+          "copy": "Tendrás acceso durante 12 meses para:\n✔ Ver las clases a tu ritmo\n✔ Repetir los módulos cuando lo necesites\n✔ Acceso a contenido exclusivo \n✔ Consolidar tu proyecto con calma\nPorque no se trata solo de aprender rápido."
+        },
+        {
+          "type": "credential",
+          "title": "🏅 Certificado de participación",
+          "copy": "Al finalizar la Certificación recibirás tu certificado de participación al concluir.\n\nUn reconocimiento a tu compromiso, tu crecimiento y el paso que decidiste dar para profesionalizar tu talento.",
+          "asset": "Foto"
+        }
+      ]
+    },
+    {
+      "id": "offer_stack_recap",
+      "label": "OFFER_STACK",
+      "placement": "pre_price",
+      "elements": [
+        {
+          "type": "quote",
+          "copy": "“Esta no es solo una certificación. Es el entorno, el método y el acompañamiento que necesitas para construir algo real."
+        },
+        {
+          "type": "recap",
+          "copy": "✨ Recapitulemos todo lo que obtienes hoy all sumarte a la Certificación de Juguetería Creativa Profesional recibirás:"
+        },
+        {
+          "type": "bullets",
+          "title": "Beneficios",
+          "items": [
+            "✔ 4 Fases estructuradas paso a paso",
+            "✔ 8 modelos profesionales de libros sensoriales",
+            "✔ Método probado para convertir tu creatividad en ingresos",
+            "✔ Asesorías grupales en vivo para resolver dudas",
+            "✔ Comunidad internacional de Jugueteras Creativas",
+            "✔ Acceso completo por 1 año",
+            "✔ Certificado de finalización"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bonuses",
+      "label": "BONUSES_STACK",
+      "elements": [
+        {
+          "type": "section_title",
+          "copy": " Recibirás 9 Bonos Estratégicos\n\nValorados en más de $800 USD\n\nDiseñados para ayudarte a vender más, crear mejor y recuperar tu inversión más rápido."
+        },
+        {
+          "type": "bonus_group",
+          "title": "BONOS PARA VENDER MÁS",
+          "items": [
+            { "title": "📸 Fotos y Videos que Venden", "copy": "Aprende cómo tomar fotos y grabar videos atractivos usando solo tu celular, para que tus Juguetes Creativos se vean profesionales y llamen la atención en redes sociales.\n\nPorque no basta con crear algo lindo.\nDebes saber mostrarlo para que se venda." },
+            { "title": "📲 Vende por Redes Sociales", "copy": "Una guía práctica para usar Instagram, Facebook o WhatsApp de forma simple y estratégica.\n\nAprenderás qué publicar, cómo presentar tus productos y cómo atraer clientes sin sentirte forzada ni incómoda." },
+            { "title": "💰 Calculadora Mágica de Rentabilidad", "copy": "Una herramienta práctica que te ayudará a calcular correctamente tus costos, definir precios con seguridad y saber exactamente cuánto estás ganando.\n\nNo más precios al azar.\nNo más dudas." },
+            { "title": "📆 Estrategia de Ventas en Temporadas Altas", "copy": "Aprende cómo prepararte para fechas clave (Navidad, regreso a clases, Día del Niño, cumpleaños) con campañas sencillas que te permitan aumentar tus ingresos en los meses más fuertes del año." }
+          ]
+        },
+        {
+          "type": "bonus_group",
+          "title": "🎨 BONOS PARA ELEVAR TU NIVEL CREATIVO",
+          "items": [
+            { "title": "🎀 Empaques que Enamoran", "copy": "Descubre cómo presentar tus productos de forma más atractiva y profesional para aumentar el valor percibido, generar más recomendaciones y mejorar la experiencia del cliente." },
+            { "title": "🧠 Estimulación Temprana para Jugueteras Creativas", "copy": "Aprende los fundamentos básicos de estimulación temprana para que tus juguetes no solo sean lindos, sino también educativos y funcionales.\n\nEsto eleva tu autoridad y te permite comunicar mejor el valor de tus productos." },
+            { "title": "🎨 Combinación de Colores Asombrosas", "copy": "Aprende principios sencillos para elegir y combinar colores de forma armoniosa, logrando diseños más atractivos y profesionales, incluso si sientes que “no eres creativa”." },
+            { "title": "🖨 Imprime y Vende (Técnica de Sublimado)", "copy": "Descubre cómo aplicar la técnica de sublimado para crear juguetes y productos personalizados más rápidos, lindos y con mayor variedad.\n\nMás opciones.\nMás velocidad.\nMás oportunidades de venta." }
+          ]
+        },
+        {
+          "type": "bonus_special",
+          "title": "BONO ESPECIAL",
+          "item": {
+            "title": "Juguetes Creativos que Enamoran",
+            "copy": "14 tutoriales adicionales de juguetes simples, lindos y estratégicos que puedes:\n\n✔ Vender individualmente\n✔ Armar como kits\n✔ Ofrecer como regalo o sorpresa\n✔ Usar para aumentar tu ticket promedio\n\nMás oportunidades de ingreso desde el inicio."
+          }
+        }
+      ]
+    },
+    {
+      "id": "price_guarantee_checkout",
+      "label": "PRICE_CTA_GUARANTEE",
+      "placement": "decision_zone",
+      "elements": [
+        { "type": "price_anchor", "copy": "Programa valuado en 1497\nHoy solo 197" },
+        { "type": "cta_primary", "copy": "QUIERO MI CUPO AHORA", "action": "go_to_hotmart_step1" },
+        {
+          "type": "guarantee",
+          "copy": "🛡️ Garantía de 7 días\nPrueba la Certificación durante 7 días.\nSi no es para ti, te devolvemos el 100% de tu dinero.\nSin preguntas. Sin complicaciones."
+        },
+        {
+          "type": "ui_block_optional",
+          "name": "no_card_rescue",
+          "copy_suggestion_optional": "¿No tienes tarjeta? Escríbenos y te guiamos para pagar con las opciones disponibles en tu país.",
+          "cta_optional": "Tienes preguntas escríbenos",
+          "asset": "Icono WhatsApp"
+        }
+      ]
+    },
+    {
+      "id": "social_proof",
+      "label": "PROOF",
+      "elements": [
+        { "type": "section_title", "copy": "Lo que dicen nuestras alumnas" },
+        { "type": "proof_asset", "copy": "Videos de testimonios" }
+      ]
+    },
+    {
+      "id": "qualification",
+      "label": "QUALIFICATION",
+      "elements": [
+        { "type": "section_title", "copy": "Esta Certificación SÍ es para ti si…" },
+        {
+          "type": "bullets",
+          "items": [
+            "✔ Eres mamá, profesional educativa o mujer creativa que quiere generar ingresos desde casa sin descuidar su familia.",
+            "✔ Tienes talento y creatividad, pero te falta estructura y dirección para convertirlo en un negocio real.",
+            "✔ Quieres dejar de improvisar y aprender un sistema claro paso a paso.",
+            "✔ Estás dispuesta a aplicar lo que aprendas y comprometerte con tu crecimiento.",
+            "✔ Buscas un proyecto alineado con tus valores, tu propósito y tu estilo de vida.",
+            "✔ Deseas construir algo que te haga sentir orgullosa y te dé independencia."
+          ]
+        },
+        { "type": "section_title", "copy": "❌ Esta Certificación NO es para ti si…" },
+        {
+          "type": "bullets",
+          "items": [
+            "✘ Estás buscando resultados sin aplicar ni comprometerte.",
+            "✘ Prefieres seguir probando ideas sueltas de internet sin estructura ni guía.",
+            "✘ No estás dispuesta a invertir tiempo en aprender y mejorar.",
+            "✘ Quieres un hobby sin intención de convertirlo en algo profesional.",
+            "✘ No estás abierta a recibir acompañamiento ni seguir un método."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "final_contact",
+      "label": "FINAL_CTA_AND_CONTACT",
+      "elements": [
+        { "type": "cta_primary", "copy": "QUIERO MI CUPO AHORA" },
+        { "type": "support_cta", "copy": "Tienes preguntas escríbenos" },
+        { "type": "contact_asset", "copy": "Icono WhatsApp" }
+      ]
+    }
+  ],
+  "conversion_addons_recommended": {
+    "sticky_cta_mobile": {
+      "enabled": true,
+      "cta_copy": "QUIERO MI CUPO AHORA",
+      "secondary_link_optional": "Tienes preguntas escríbenos"
+    },
+    "anchors": [
+      { "label": "Ver lo que incluye", "target_section_id": "offer_stack_recap" },
+      { "label": "Ver bonos", "target_section_id": "bonuses" },
+      { "label": "Ver garantía", "target_section_id": "price_guarantee_checkout" },
+      { "label": "Testimonios", "target_section_id": "social_proof" }
+    ]
+  }
+}

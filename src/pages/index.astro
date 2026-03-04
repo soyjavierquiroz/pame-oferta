@@ -1,28 +1,35 @@
 ---
 import BonusSection from '../components/BonusSection.astro';
 import FeaturesGrid from '../components/FeaturesGrid.astro';
-import Faq from '../components/Faq.astro';
 import FinalCTA from '../components/FinalCTA.astro';
 import Hero from '../components/Hero.astro';
+import OfferSection from '../components/OfferSection.astro';
+import PaymentRescueBanner from '../components/PaymentRescueBanner.astro';
 import SectionWave from '../components/SectionWave.astro';
-import SocialProof from '../components/SocialProof.astro';
 import TransformationShowcase from '../components/TransformationShowcase.astro';
+import WhoItsFor from '../components/WhoItsFor.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout>
   <main>
     <Hero />
+    <SectionWave className="text-white" />
+    <section class="bg-white px-6 pb-20 sm:px-10 lg:px-16 lg:pb-28">
+      <div class="mx-auto max-w-content">
+        <PaymentRescueBanner />
+      </div>
+    </section>
+    <SectionWave className="text-white" />
+    <WhoItsFor />
     <SectionWave className="text-brand-canvas-50" />
     <TransformationShowcase />
     <SectionWave className="text-brand-canvas-50" />
+    <OfferSection />
+    <SectionWave className="text-white" />
     <FeaturesGrid />
-    <SectionWave className="text-brand-mint-100" />
-    <SocialProof />
     <SectionWave className="text-brand-lilac-50" />
     <BonusSection />
-    <SectionWave className="text-brand-canvas-100" />
-    <Faq />
     <SectionWave className="text-brand-plum-900" />
     <FinalCTA />
   </main>
